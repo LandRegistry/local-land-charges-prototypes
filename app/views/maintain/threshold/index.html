@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+	  items: [
+	    {
+	      text: "LLC prototypes",
+	      href: "/"
+	    },
+      {
+	      text: "Maintain prototypes",
+	      href: "../"
+	    }
+	  ]
+	}) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-l">
+        Set local authority register amendment threshold
+      </h1>
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+      <p>Overview of feature needs writing!</p>
+
+      <h2 class="govuk-heading-m">
+        Version 2
+      </h2>
+
+      <h3 class="govuk-heading-s">Changes</h3>
+      <p>Based on conversations with the team the follow changes have been made:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>new link on landing page</li>
+        <li>LA lookup on separate page</li>
+        <li>only need &ldquo;add&rdquo; not &ldquo;edit&rdquo; or &ldquo;cancel&rdquo;</li>
+        <li>if a limit is set show edit  version of the page with pre-filled values</li>
+        <li>if suspending a limit confirmation page would also be the page after LA lookup…</li>
+        <li>if suspended show time left and be able to turn off</li>
+        <li>email templates for notify and stop</li>
+      </ul>
+
+      {# <h3 class="govuk-heading-s">Research notes</h3>
+      <p>Information about the research.</p>
+      <p><a href="#0">View user research report</a>.<p> #}
+
+      {{ govukButton({
+        text: 'View prototype',
+        href: 'v2/dashboard'
+      }) }}
+
+
+
+
+
+
+      {% set v1 %}
+        <p>The initial version of this feature was done in Figma by the previous designer, Ash O.</p>
+
+        {{ govukButton({
+          text: 'View Figma design',
+          href: 'https://www.figma.com/file/xQ9qvGsl4eskxgfowXAZKH/Set-local-authority-register-amendment-threshold'
+        }) }}
+      {% endset %}
+
+      {{ govukAccordion({
+        items: [
+          {
+            heading: { text: 'Version 1' },
+            content: { html: v1 }
+          }
+        ]
+      }) }}
+
+    </div>
+
+    {% include "includes/design-resources-aside.html" %}
+  </div>
+{% endblock %}

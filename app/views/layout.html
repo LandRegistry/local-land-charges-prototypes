@@ -36,7 +36,7 @@
 {% endblock %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+  {{ serviceName }}
 {% endblock %}
 
 {% block header %}
@@ -44,8 +44,17 @@
   {{ govukHeader({
     homepageUrl: "/",
     serviceName: serviceName,
-    serviceUrl: "/",
-    containerClasses: "govuk-width-container"
+    serviceUrl: serviceUrl or "/",
+    containerClasses: "govuk-width-container",
+    navigation: [
+      {
+        html: "<span class='govuk-visually-hidden'>Signed in as </span>Chris Armstrong"
+      },
+      {
+        href: "#0",
+        text: "Sign out"
+      }
+    ] if signedIn
   }) }}
 {% endblock %}
 

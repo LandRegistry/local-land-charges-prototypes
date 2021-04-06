@@ -14,4 +14,11 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/task-list";
 @import "patterns/related-items";
 
-// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+// Move sign out link to top right
+.govuk-header__navigation {
+  @include govuk-media-query($from: desktop) {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+  }
+}
