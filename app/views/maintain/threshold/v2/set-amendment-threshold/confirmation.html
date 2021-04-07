@@ -32,7 +32,7 @@
           titleHtml: 'Thresholds disabled for 48 hours for '+data['select-local-autohority']
         }) }}
         {{ govukInsetText({
-          html: '<p>The thresholds are disabled until '+ today | date("add", 24, "hours") | date("h:mma on dddd D MMMM") +'.</p>'
+          html: '<p>The thresholds are disabled until '+ today | date("add", 48, "hours") | date("h:mma on dddd D MMMM") +'.</p>'
         }) }}
         <p>You can <a class="govuk-link--no-visited-state" href="#0">re-enable the thresholds</a> if you need to.</p>
       {% else %}
