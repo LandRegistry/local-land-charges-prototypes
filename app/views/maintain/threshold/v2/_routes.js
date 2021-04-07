@@ -11,6 +11,20 @@ router.get('*', function(req, res, next){
 })
 
 
+router.post('/set-amendment-threshold/select-la', function (req, res) {
+  res.redirect('thresholds')
+})
+
+router.post('/set-amendment-threshold/thresholds', function (req, res) {
+  res.redirect('confirmation')
+})
+
+router.get('/dashboard', function (req, res, next) {
+  req.session.destroy()
+  next()
+})
+
+
 
 
 

@@ -8,3 +8,13 @@ if (window.console && window.console.info) {
 $(document).ready(function () {
   window.GOVUKFrontend.initAll()
 })
+
+
+
+
+
+// Local authorities autocomplete
+accessibleAutocomplete.enhanceSelectElement({
+  defaultValue: '',
+  selectElement: document.querySelector('#select-local-autohority')
+})

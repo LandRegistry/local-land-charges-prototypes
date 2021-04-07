@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: 'Back',
+    href: '../dashboard'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form method="post">
+
+        {# Create an array for the LA select below #}
+        {% set laItems = [{value: '',text: 'Select local authority'}] %}
+
+        {# Include all of the LA's which are set in deafulat data #}
+        {% for i in data['local-authorities'] %}
+          {% set laItems = laItems | push ({
+            value: i,
+            text: i,
+            selected: true if data['select-local-autohority'] == i
+          }) %}
+        {% endfor %}
+
+        {# Select adds all items from the above array and is then progressivly enhanced in app.js #}
+        {{ govukSelect({
+          id: 'select-local-autohority',
+          name: 'select-local-autohority',
+          label: {
+            html: 'Local authority name',
+            classes: 'govuk-label--l',
+            isPageHeading: 'true'
+          },
+          value: data['select-local-authority'],
+          items: laItems
+        }) }}
+
+        {# hint: {
+          text: 'Start typing an authority name to search'
+        }, #}
+
+
+
+
+        {{ govukButton({
+          html: 'Continue'
+        }) }}
+
+
+
+        {{ govukDetails({
+          summaryText: 'I cannot find the authority',
+          html: '<h2 class="govuk-heading-s">Not sure which authority you need?</h2
+            <p>
+              <a href="https://data.gov.uk/dataset/local-authority-districts-counties-and-unitary-authorities-december-2015-map-in-great-britain2">See a map of authorities in the UK</a> (Office of National Statistics)
+            </p>
+            <p>If you still cannot find the authority, <a href="https://help.landregistry.gov.uk/app/contactus_LLC" class="govuk-link" rel="noreferrer noopener" target="_blank"> contact HM Land Registry (opens in new tab)</a>.</p>'
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

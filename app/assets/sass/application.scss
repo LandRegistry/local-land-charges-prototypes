@@ -14,6 +14,9 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+// Components that aren't in Frontend
+@import "components/autocomplete";
+
 // Move sign out link to top right
 .govuk-header__navigation {
   @include govuk-media-query($from: desktop) {

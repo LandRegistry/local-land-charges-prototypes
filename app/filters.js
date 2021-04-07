@@ -30,11 +30,12 @@ module.exports = function (env) {
   }
 
 
+  var dateFilter = require('nunjucks-date-filter')
+  filters.date = dateFilter
 
 
 
 
 
-  
   return filters
 }
