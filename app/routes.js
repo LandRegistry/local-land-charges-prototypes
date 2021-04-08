@@ -10,6 +10,9 @@ router.get('/prototype-admin/clear-data', function (req, res) {
 // Grab the feature urls for the aside heroku links
 router.use('/', (req, res, next) => {
   res.locals.feature = req.url
+  if (req.get('host').includes('localhost')) {
+    res.locals.host = true
+  }
   next()
 })
 

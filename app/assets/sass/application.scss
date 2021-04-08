@@ -17,6 +17,25 @@ $govuk-assets-path: '/govuk/assets/';
 // Components that aren't in Frontend
 @import "components/autocomplete";
 
+
+
+
+// Hide the OGL licence
+.govuk-footer__licence-logo,
+.govuk-footer__licence-description {
+  display: none;
+}
+
+// Remove margin so links line up now we've removed the OLG
+.govuk-footer__inline-list,
+.govuk-footer__inline-list-item {
+  margin-bottom: 0;
+}
+
+
+
+
+
 // Move sign out link to top right
 .govuk-header__navigation {
   @include govuk-media-query($from: desktop) {

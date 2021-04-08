@@ -69,12 +69,20 @@
       meta: {
         items: [
           {
-            href: "https://govuk-prototype-kit.herokuapp.com/",
-            text: "GOV.UK Prototype Kit " + releaseVersion
+            href: "/prototype-admin/clear-data",
+            text: "Clear session data"
           },
           {
-            href: "/prototype-admin/clear-data",
-            text: "Clear data"
+            href: "https://llc-prototypes.herokuapp.com"+feature,
+            text: "View page on Heroku (opens in new tab)"
+          } if host,
+          {
+            href: "https://github.com/LandRegistry/local-land-charges-prototypes",
+            text: "GitHub repo"
+          },
+          {
+            href: "https://govuk-prototype-kit.herokuapp.com/",
+            text: "GOV.UK Prototype Kit " + releaseVersion
           }
         ]
       }
