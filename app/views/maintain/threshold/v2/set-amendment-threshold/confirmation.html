@@ -26,7 +26,7 @@
         {{ govukPanel({
           titleHtml: 'Thresholds re-enabled for '+data['select-local-autohority']
         }) }}
-        <p>You can <a class="govuk-link--no-visited-state" href="#0">amend the thresholds or disable them again</a> if you need to.</p>
+        <p>You can <a class="govuk-link--no-visited-state" href="#0">update the thresholds or disable them again</a> if you need to.</p>
       {% elif disabled %}
         {{ govukPanel({
           titleHtml: 'Thresholds disabled for 48 hours for '+data['select-local-autohority']
@@ -37,9 +37,9 @@
         <p>You can <a class="govuk-link--no-visited-state" href="#0">re-enable the thresholds</a> if you need to.</p>
       {% else %}
         {{ govukPanel({
-          titleHtml: 'Thresholds amended for '+data['select-local-autohority'] if amend else 'Thresholds added for '+data['select-local-autohority']
+          titleHtml: 'Thresholds updated for '+data['select-local-autohority'] if amend else 'Thresholds set for '+data['select-local-autohority']
         }) }}
-        <p>You can <a class="govuk-link--no-visited-state" href="#0">amend the threshold{{ ' again' if amend }}</a> if you need to.</p>
+        <p>You can <a class="govuk-link--no-visited-state" href="#0">update the threshold{{ ' again' if amend }}</a> if you need to.</p>
       {% endif %}
 
       <p class="govuk-!-margin-top-6"><a class="govuk-link--no-visited-state" href="../dashboard">Return to main menu</a></p>
