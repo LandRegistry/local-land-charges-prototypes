@@ -74,7 +74,11 @@
           },
           {
             href: "https://llc-prototypes.herokuapp.com"+feature,
-            text: "View page on Heroku (opens in new tab)"
+            text: "View page on Heroku (opens in new tab)",
+            attributes: {
+              "rel": "noreferrer noopener",
+              "target": "_blank"
+            }
           } if host,
           {
             href: "https://github.com/LandRegistry/local-land-charges-prototypes",
@@ -84,7 +88,7 @@
             href: "https://govuk-prototype-kit.herokuapp.com/",
             text: "GOV.UK Prototype Kit " + releaseVersion
           }
-        ]
+        ] | cleanArray
       }
     }) }}
   {% endblock %}
