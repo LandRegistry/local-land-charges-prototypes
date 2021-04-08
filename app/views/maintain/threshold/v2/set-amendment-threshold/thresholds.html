@@ -24,7 +24,7 @@
             </span>
             {{ 'Update' if amend else 'Set' }} register amendment thresholds
           </h1>
-          <p class="govuk-!-margin-bottom-6">{{ 'Update' if amend else 'Set' }} the thresholds for when the local authority will get an email notification and when the system will stop them making more charges in a 24 hour period.</p>
+          <p class="govuk-!-margin-bottom-6">{{ 'Update' if amend else 'Set' }} the thresholds for when the local authority will get an email notification and when the system will stop them making more changes in a 24 hour period.</p>
 
           {% call govukFieldset({
             legend: {
@@ -158,7 +158,13 @@
 
         </form>
 
+
+
+
       {% else %}
+
+
+
 
         <h1 class="govuk-heading-l">
           <span class="govuk-caption-l">
@@ -180,6 +186,10 @@
         <p>or <a class="govuk-link--no-visited-state" href="../dashboard">return to main menu</a></p>
 
       {% endif %}
+
+
+
+
 
     </div>
   </div>
