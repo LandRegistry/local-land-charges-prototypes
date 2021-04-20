@@ -3,12 +3,12 @@
 {% set amend = true if data['select-local-autohority'] == 'Bournemouth, Christchurch and Poole Council' %}
 {% set disabled = true if data['select-local-autohority'] == 'Adur District Council' %}
 
-{% block beforeContent %}
+{# {% block beforeContent %}
   {{ govukBackLink({
     text: 'Back',
     href: 'select-la'
   }) }}
-{% endblock %}
+{% endblock %} #}
 
 {% block content %}
   <div class="govuk-grid-row">

@@ -3,9 +3,12 @@ const router = new express.Router()
 
 // Set variables
 router.get('*', function(req, res, next){
-  res.locals['serviceName'] = 'Maintain LLC'
+  res.locals['serviceName'] = 'Maintain Local Land Charges'
   res.locals['serviceUrl'] = '/'+req.originalUrl.split('/')[1]+'/'+req.originalUrl.split('/')[2]+'/'
+  res.locals['htmlClasses'] = 'maintain'
   res.locals['signedIn'] = true
+  res.locals['orgSwitcher'] = true
+
 
   next()
 })

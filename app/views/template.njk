@@ -40,14 +40,16 @@
     {% endblock %}
 
     {% block main %}
+      {{ govukPhaseBanner({
+        tag: {
+          text: "Prototype",
+          classes: "govuk-tag--pink"
+        },
+        html: 'This is not a full service. It is not production code and you might experience problems.',
+        classes: 'govuk-width-container'
+      }) }}
       <div class="govuk-width-container {{ containerClasses }}">
-        {{ govukPhaseBanner({
-          tag: {
-            text: "Prototype",
-            classes: "govuk-tag--pink"
-          },
-          html: 'This is not a full service. It is not production code and you might experience problems.'
-        }) }}
+        {% if orgSwitcher %}{% include "includes/org-switcher.html" %}{% endif %}
         {% block beforeContent %}{% endblock %}
         <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
           {% block content %}{% endblock %}

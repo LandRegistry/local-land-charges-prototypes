@@ -51,7 +51,7 @@
     containerClasses: "govuk-width-container",
     navigation: [
       {
-        html: "<span class='govuk-visually-hidden'>Signed in as </span>Chris Armstrong"
+        html: "<span class='govuk-visually-hidden'>Signed in as </span>Chris Armstrong<br>"
       },
       {
         href: "#0",
@@ -63,36 +63,9 @@
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
 
-{% if useAutoStoreData %}
-  {% block footer %}
-    {{ govukFooter({
-      meta: {
-        items: [
-          {
-            href: "/prototype-admin/clear-data",
-            text: "Clear session data"
-          },
-          {
-            href: "https://llc-prototypes.herokuapp.com"+feature,
-            text: "View page on Heroku (opens in new tab)",
-            attributes: {
-              "rel": "noreferrer noopener",
-              "target": "_blank"
-            }
-          } if host,
-          {
-            href: "https://github.com/LandRegistry/local-land-charges-prototypes",
-            text: "GitHub repo"
-          },
-          {
-            href: "https://govuk-prototype-kit.herokuapp.com/",
-            text: "GOV.UK Prototype Kit " + releaseVersion
-          }
-        ] | cleanArray
-      }
-    }) }}
-  {% endblock %}
-{% endif %}
+{% block footer %}
+  {% include "includes/foot.html" %}
+{% endblock %}
 
 {% block bodyEnd %}
   {% block scripts %}

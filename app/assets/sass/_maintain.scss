@@ -1,0 +1,42 @@
+// Hide the footer phase banner by deafult
+.footer-phase-banner {
+  display: none;
+}
+
+.maintain {
+
+
+  // Remove the GOV.UK logo for maintain
+  .govuk-header__logo {
+    display: none;
+  }
+  // Remove the service name padding so its flush with the container
+  .govuk-header__content {
+    padding-left: 0;
+  }
+  // Bump up the service name size
+  .govuk-header__link--service-name {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+
+  // Hide the phase banner at the top of the page
+  .govuk-header + .govuk-phase-banner {
+    display: none;
+  }
+  // Show the phase banner at the bottom and swap the border from bottom to top
+  .footer-phase-banner {
+    display: block;
+  }
+  .govuk-phase-banner {
+    border-bottom: none;
+    padding-bottom: 20px;
+  }
+
+
+
+
+
+
+}

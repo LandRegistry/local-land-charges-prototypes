@@ -16,6 +16,10 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Components that aren't in Frontend
 @import "components/autocomplete";
+@import "components/org-switcher";
+
+// Product specific styles
+@import "maintain";
 
 
 
