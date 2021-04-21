@@ -13,7 +13,6 @@ router.get('*', function(req, res, next){
   next()
 })
 
-
 router.post('/set-amendment-threshold/select-la', function (req, res) {
   res.redirect('thresholds')
 })

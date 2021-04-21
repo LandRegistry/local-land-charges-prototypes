@@ -21,6 +21,11 @@ router.use(/\/(.)*\/(.)*\/v([0-9]+)/, (req, res, next) => {
   return require(`./views/${req.originalUrl.split('/')[1]}/${req.originalUrl.split('/')[2]}/v${req.params[2]}/_routes`)(req, res, next);
 })
 
+// Redirect the org switcher so  it works at different levels
+router.get('*/org-switch', function (req, res) {
+  res.redirect(`/${req.originalUrl.split('/')[1]}/${req.originalUrl.split('/')[2]}/${req.originalUrl.split('/')[3]}/local-authorities`)
+})
+
 
 
 
