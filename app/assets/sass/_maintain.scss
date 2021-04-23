@@ -21,18 +21,20 @@
   }
 
 
+  // We're not doing this anymore, but might want to revisit later 
+
   // Hide the phase banner at the top of the page
-  .govuk-header + .govuk-phase-banner {
-    display: none;
-  }
+  // .govuk-header + .govuk-phase-banner {
+  //   display: none;
+  // }
   // Show the phase banner at the bottom and swap the border from bottom to top
-  .footer-phase-banner {
-    display: block;
-  }
-  .govuk-phase-banner {
-    border-bottom: none;
-    padding-bottom: 20px;
-  }
+  // .footer-phase-banner {
+  //   display: block;
+  // }
+  // .govuk-phase-banner {
+  //   border-bottom: none;
+  //   padding-bottom: 20px;
+  // }
 
 
 
