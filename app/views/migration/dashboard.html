@@ -10,19 +10,29 @@
 
     <div class="govuk-grid-column-full">
 
-
-
       <h2 class="govuk-heading-m">
         Spatial data
       </h2>
       <div class="govuk-width-container">
 
-        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+        <p class="govuk-body govuk-!-font-weight-bold">Charges has</p>
+      </dt>
+      <dd class="govuk-summary-list__actions">
+        <p class="govuk-body govuk-!-font-weight-bold">Charges left</p>
+      </dd>
+      <dd class="govuk-summary-list__actions">
+        <p class="govuk-body govuk-!-font-weight-bold">Action</p>
+      </dd>
+    </div>
+
           <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
+            <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
               Missing spatial data- matching candidates found
             </dt>
-            <dd class="govuk-summary-list__value">
+            <dd class="govuk-summary-list__actions">
 
             </dd>
             <dd class="govuk-summary-list__actions">
@@ -34,100 +44,282 @@
             </dd>
           </div>
           <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Date of birth
+            <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+              Missing spatial data- no matching candidates found
             </dt>
-            <dd class="govuk-summary-list__value">
-              5 January 1978
+            <dd class="govuk-summary-list__actions">
+              4
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> date of birth</span>
-              </a>
+
+              {{ govukButton({
+                html: 'Add extent'
+              }) }}
+
             </dd>
           </div>
           <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Address
+            <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+              Invalid geometry
             </dt>
-            <dd class="govuk-summary-list__value">
-              72 Guild Street<br>London<br>SE23 6FH
+            <dd class="govuk-summary-list__actions">
+
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> address</span>
-              </a>
+
+              {{ govukButton({
+                html: 'All items fixed'
+              }) }}
+
             </dd>
           </div>
           <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Contact details
+            <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+              Point data
             </dt>
-            <dd class="govuk-summary-list__value">
-              <p class="govuk-body">07700 900457</p>
-              <p class="govuk-body">sarah.phillips@example.com</p>
+            <dd class="govuk-summary-list__actions">
+
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> contact details</span>
-              </a>
+
+              {{ govukButton({
+                html: 'All items fixed'
+              }) }}
+
             </dd>
           </div>
-        </dl>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+              Line data
+            </dt>
+            <dd class="govuk-summary-list__actions">
+
+            </dd>
+            <dd class="govuk-summary-list__actions">
+
+              {{ govukButton({
+                html: 'All items fixed'
+              }) }}
+
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+              Positional accuracy issue found
+            </dt>
+            <dd class="govuk-summary-list__actions">
+
+            </dd>
+            <dd class="govuk-summary-list__actions">
+
+              {{ govukButton({
+                html: 'All items fixed'
+              }) }}
+
+
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+              Search for a charge by reference
+            </dt>
+            <dd class="govuk-summary-list__actions">
+
+            </dd>
+            <dd class="govuk-summary-list__actions">
+
+              {{ govukButton({
+                html: 'Search'
+              }) }}
+
+          </div>
+
+          </div>
+
+          <h2 class="govuk-heading-m">
+            Textual analysis
+          </h2>
+          <div class="govuk-width-container">
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+            <p class="govuk-body govuk-!-font-weight-bold">Charges has</p>
+          </dt>
+          <dd class="govuk-summary-list__actions">
+            <p class="govuk-body govuk-!-font-weight-bold">Charges left</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <p class="govuk-body govuk-!-font-weight-bold">Action</p>
+          </dd>
+        </div>
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+                  Postcode missing
+                </dt>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+                <dd class="govuk-summary-list__actions"
+
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+                  UPRN missing
+                </dt>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+                  First line of address missing
+                </dt>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+                  A registration date before creation date
+                </dt>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+                  An invalid or past expiry date
+                </dt>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+                  No address
+                </dt>
+                <dd class="govuk-summary-list__actions">
+                  5
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+                  Date validation checks failed
+                </dt>
+                <dd class="govuk-summary-list__actions">
+                  5
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+              </div>
+              </div>
+
+              <h2 class="govuk-heading-m">
+                Admin action
+              </h2>
+              <div class="govuk-width-container">
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+                <p class="govuk-body govuk-!-font-weight-bold">Description</p>
+              </dt>
+              <dd class="govuk-summary-list__actions">
+                <p class="govuk-body govuk-!-font-weight-bold">Total charges</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <p class="govuk-body govuk-!-font-weight-bold">Action</p>
+              </dd>
+            </div>
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+                      Review deferred charges
+                    </dt>
+                    <dd class="govuk-summary-list__actions">
+
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+
+                    {{ govukButton({
+                      html: 'All items fixed'
+                    }) }}
+
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+                      Review deferred charges
+                    </dt>
+                    <dd class="govuk-summary-list__actions">
+
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      {{ govukButton({
+                        html: 'All items fixed'
+                      }) }}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+                      Charges currently in progress
+                    </dt>
+                    <dd class="govuk-summary-list__actions">
+
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      {{ govukButton({
+                        html: 'No charges in progress'
+                      }) }}
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+                      Charges flagged for cancellation
+                    </dt>
+                    <dd class="govuk-summary-list__actions">
+
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+
+                    </dd>
+                  </div>
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+                      Search for charge
+                    </dt>
+                    <dd class="govuk-summary-list__actions">
+
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      {{ govukButton({
+                        html: 'Search'
+                      }) }}
+                    </dd>
+                  </div>
 
 
 
 
-
-      <h2 class="govuk-heading-m">
-        Official searches
-      </h2>
-      <ul class="govuk-list">
-        <li><a class="govuk-link--no-visited-state" href="#0">Perform an official search</a></li>
-        <li><a class="govuk-link--no-visited-state" href="#0">Repeat an official search</a></li>
-        <li><a class="govuk-link--no-visited-state" href="#0">View an official search</a></li>
-      </ul>
-
-
-
-      <h2 class="govuk-heading-m">
-        Send a payment link
-      </h2>
-      <ul class="govuk-list">
-        <li><a class="govuk-link--no-visited-state" href="#0">Send a payment link</a></li>
-      </ul>
-
-
-
-      <h2 class="govuk-heading-m">
-        Manage users
-      </h2>
-      <ul class="govuk-list">
-        <li><a class="govuk-link--no-visited-state" href="#0">Add a new user</a></li>
-        <li><a class="govuk-link--no-visited-state" href="#0">Update an existing user</a></li>
-      </ul>
-
-
-
-      <h2 class="govuk-heading-m">
-        Manage search service
-      </h2>
-      <ul class="govuk-list">
-        <li><a class="govuk-link--no-visited-state" href="#0">Find search information</a></li>
-        <li><a class="govuk-link--no-visited-state" href="#0">Manage banner messages</a></li>
-      </ul>
-
-
-
-      <h2 class="govuk-heading-m">
-        Manage laws and categories
-      </h2>
-      <ul class="govuk-list">
-        <li><a class="govuk-link--no-visited-state" href="#0">Add a new law</a></li>
-        <li><a class="govuk-link--no-visited-state" href="#0">Edit or remove a law</a></li>
-        <li><a class="govuk-link--no-visited-state" href="#0">Add a new category</a></li>
-        <li><a class="govuk-link--no-visited-state" href="#0">Manage a category</a></li>
-      </ul>
 
     </div>
   </div>
