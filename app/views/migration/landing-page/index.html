@@ -8,7 +8,7 @@
 	      href: "/"
 	    },
       {
-	      text: "[Feature name] prototypes",
+	      text: "Migration helper prototypes",
 	      href: "../"
 	    }
 	  ]
@@ -19,7 +19,7 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
       <h1 class="govuk-heading-l">
-        [Feature name]
+        Landing page
       </h1>
     </div>
 
@@ -27,19 +27,20 @@
       <p>Overview of feature.</p>
 
       <h2 class="govuk-heading-m">
-        Version 2
+        Version 1
       </h2>
+      <p class="govuk-hint">Version 1 of this prototype, there is a live version too</p>
 
       <h3 class="govuk-heading-s">Changes</h3>
-      <p>Information about this version.</p>
+      <p>Land Registry users were confused about which local authority (LA) they were currently signed in to, so we&rsquo;ve replaced the service name with the LA name. We&rsquo;ve also removed the other options on the page as they weren&rsquo;t usable.</p>
 
-      <h3 class="govuk-heading-s">Research notes</h3>
+      {# <h3 class="govuk-heading-s">Research notes</h3>
       <p>Information about the research.</p>
-      <p><a href="#0">View user research report</a>.<p>
+      <p><a href="#0">View user research report</a>.<p> #}
 
       {{ govukButton({
         text: 'View prototype',
-        href: 'v2/page'
+        href: 'v1/landing'
       }) }}
 
 
@@ -47,7 +48,7 @@
 
 
 
-      {% set v1 %}
+      {# {% set v1 %}
         <h3 class="govuk-heading-s">Changes</h3>
         <p>Information about this version.</p>
 
@@ -68,7 +69,7 @@
             content: { html: v1 }
           }
         ]
-      }) }}
+      }) }} #}
 
     </div>
   </div>
