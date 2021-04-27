@@ -17,6 +17,8 @@ router.post('/search', function (req, res) {
     res.render('search/end-to-end/v2/search', {
       error: 'Enter a postcode or street name'
     })
+  } else if (search == 'KY15 5EH') {
+    res.redirect('no-dice')
   } else {
     res.redirect('results')
   }

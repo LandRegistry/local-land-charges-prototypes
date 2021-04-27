@@ -25,7 +25,7 @@
         {{ govukInput({
           id: 'search',
           name: 'search',
-          value: data['search'],
+          value: data['search'] or 'KY15 5EH',
           classes: 'govuk-input--width-20',
           formGroup: {
             classes: 'govuk-!-margin-bottom-3'
