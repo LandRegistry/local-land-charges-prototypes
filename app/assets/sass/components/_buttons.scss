@@ -36,3 +36,12 @@ $button-shadow-size: $govuk-border-width-form-element;
     }
   }
 }
+.govuk-table .govuk-button,
+.govuk-summary-list .govuk-button {
+width: 100%;
+margin: 0;
+}
+
+.govuk-summary-list .govuk-button {
+margin-left: 20px;
+}

@@ -10,7 +10,7 @@
 
     <div class="govuk-grid-column-full">
 
-      <h2 class="govuk-heading-m">
+      <h2 class="govuk-heading-m govuk-!-margin-top-6">
         Spatial data
       </h2>
       <div class="govuk-width-container">
@@ -38,7 +38,9 @@
             <dd class="govuk-summary-list__actions">
 
               {{ govukButton({
-                html: 'All items fixed'
+                classes: 'govuk-button--tertiary',
+                html: 'All items fixed',
+                disabled: true
               }) }}
 
             </dd>
@@ -53,6 +55,7 @@
             <dd class="govuk-summary-list__actions">
 
               {{ govukButton({
+                classes: 'govuk-button--tertiary',
                 html: 'Add extent'
               }) }}
 
@@ -68,7 +71,9 @@
             <dd class="govuk-summary-list__actions">
 
               {{ govukButton({
-                html: 'All items fixed'
+                classes: 'govuk-button--tertiary',
+                html: 'All items fixed',
+                disabled: true
               }) }}
 
             </dd>
@@ -83,7 +88,9 @@
             <dd class="govuk-summary-list__actions">
 
               {{ govukButton({
-                html: 'All items fixed'
+                classes: 'govuk-button--tertiary',
+                html: 'All items fixed',
+                disabled: true
               }) }}
 
             </dd>
@@ -98,7 +105,9 @@
             <dd class="govuk-summary-list__actions">
 
               {{ govukButton({
-                html: 'All items fixed'
+                classes: 'govuk-button--tertiary',
+                html: 'All items fixed',
+                disabled: true
               }) }}
 
             </dd>
@@ -113,7 +122,9 @@
             <dd class="govuk-summary-list__actions">
 
               {{ govukButton({
-                html: 'All items fixed'
+                classes: 'govuk-button--tertiary',
+                html: 'All items fixed',
+                disabled: true
               }) }}
 
 
@@ -129,6 +140,7 @@
             <dd class="govuk-summary-list__actions">
 
               {{ govukButton({
+                classes: 'govuk-button--tertiary',
                 html: 'Search'
               }) }}
 
@@ -136,7 +148,7 @@
 
           </div>
 
-          <h2 class="govuk-heading-m">
+          <h2 class="govuk-heading-m govuk-!-margin-top-6">
             Textual analysis
           </h2>
           <div class="govuk-width-container">
@@ -233,7 +245,7 @@
               </div>
               </div>
 
-              <h2 class="govuk-heading-m">
+              <h2 class="govuk-heading-m govuk-!-margin-top-6">
                 Admin action
               </h2>
               <div class="govuk-width-container">
@@ -261,7 +273,9 @@
                     <dd class="govuk-summary-list__actions">
 
                     {{ govukButton({
-                      html: 'All items fixed'
+                      classes: 'govuk-button--tertiary',
+                      html: 'All items fixed',
+                      disabled: true
                     }) }}
 
                     </dd>
@@ -275,7 +289,9 @@
                     </dd>
                     <dd class="govuk-summary-list__actions">
                       {{ govukButton({
-                        html: 'All items fixed'
+                        classes: 'govuk-button--tertiary',
+                        html: 'All items fixed',
+                        disabled: true
                       }) }}
                     </dd>
                   </div>
@@ -288,7 +304,9 @@
                     </dd>
                     <dd class="govuk-summary-list__actions">
                       {{ govukButton({
-                        html: 'No charges in progress'
+                        classes: 'govuk-button--tertiary',
+                        html: 'No charges in progress',
+                        disabled: true
                       }) }}
                     </dd>
                   </div>
@@ -312,12 +330,48 @@
                     </dd>
                     <dd class="govuk-summary-list__actions">
                       {{ govukButton({
+                        classes: 'govuk-button--tertiary',
                         html: 'Search'
                       }) }}
                     </dd>
                   </div>
 
+                </div>
 
+
+
+{{ govukTable({
+  caption: "Download Migration Helper data",
+  captionClasses: "govuk-table__caption--m",
+  firstCellIsHeader: true,
+  head: [
+    {
+      text: "File"
+    },
+    {
+      text: "Format"
+    }
+  ],
+  rows: [
+      [
+        {
+          html: "<a href='/public/images/migrationdocument.csv' download='280421-1248-1234.csv'> Migration-data.csv </a>"
+        },
+        {
+          text: "Comma-separated values (CSV)"
+        }
+      ],
+      [
+        {
+          html: "<a href='/public/images/migrationdocument.csv' download='280421-1248-1234.csv'> Migration-data.shp </a>"
+        },
+        {
+          text: "Shapefile"
+        }
+      ]
+
+    ]
+}) }}
 
 
 
