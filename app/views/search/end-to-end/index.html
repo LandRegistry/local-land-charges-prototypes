@@ -52,7 +52,7 @@
 
       {{ govukButton({
         text: 'View prototype',
-        href: 'v2/search'
+        href: 'v2/start'
       }) }}
 
 
@@ -60,12 +60,12 @@
 
 
 
-      {# {% set v1 %}
-        <p>The initial version of this feature was done in Figma by the previous designer, Ash O.</p>
+      {% set v1 %}
+        <p>The initial recomendations were done by the previous designer, Ash O.</p>
 
         {{ govukButton({
-          text: 'View Figma design',
-          href: 'https://www.figma.com/file/xQ9qvGsl4eskxgfowXAZKH/Set-local-authority-register-amendment-threshold'
+          text: 'View feedback slide deck',
+          href: 'https://docs.google.com/presentation/d/1wDEABXNlojMy9CRSm7EIQ0QVnarmYX026YabJ-nrRRY/edit#slide=id.gbd37c5e0f2_0_119'
         }) }}
       {% endset %}
 
@@ -76,7 +76,7 @@
             content: { html: v1 }
           }
         ]
-      }) }} #}
+      }) }}
 
     </div>
   </div>

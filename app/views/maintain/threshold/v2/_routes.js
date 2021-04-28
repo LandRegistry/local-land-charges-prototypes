@@ -7,7 +7,10 @@ router.get('*', function(req, res, next){
   res.locals['serviceUrl'] = '/'+req.originalUrl.split('/')[1]+'/'+req.originalUrl.split('/')[2]+'/'
   res.locals['htmlClasses'] = 'maintain'
   res.locals['signedIn'] = true
-  res.locals['orgSwitcher'] = true
+
+  // Decision not to have the org switcher for now and put the name in the header instead of
+  // the service name, but keeping this here in case we want it in the future.
+  // res.locals['orgSwitcher'] = true
 
 
   next()

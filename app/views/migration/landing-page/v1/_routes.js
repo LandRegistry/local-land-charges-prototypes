@@ -3,17 +3,13 @@ const router = new express.Router()
 
 // Set variables
 router.get('*', function(req, res, next){
-  res.locals['serviceName'] = 'Search for local land charges'
+  res.locals['serviceName'] = 'Bournemouth, Christchurch and Poole Council'
   res.locals['serviceUrl'] = '/'+req.originalUrl.split('/')[1]+'/'+req.originalUrl.split('/')[2]+'/'
+  res.locals['htmlClasses'] = 'maintain'
   res.locals['signedIn'] = true
 
   next()
 })
-
-router.post('/search', function (req, res) {
-  res.redirect('results')
-})
-
 
 
 

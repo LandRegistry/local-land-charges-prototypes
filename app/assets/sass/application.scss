@@ -18,9 +18,19 @@ $govuk-assets-path: '/govuk/assets/';
 @import "components/autocomplete";
 @import "components/org-switcher";
 @import "components/buttons";
+@import "components/lang-switcher";
 
 // Product specific styles
 @import "maintain";
+
+// Helper classses
+.text-align-right {
+  text-align: right;
+}
+
+.float-right {
+  float: right;
+}
 
 
 
