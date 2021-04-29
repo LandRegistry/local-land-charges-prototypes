@@ -17,6 +17,22 @@
           Charges for {{ data['address'] }}
         </h1>
 
+        <p>There are 6 local land charges that affect the land you searched. You can view the these free of charge, or <a href="#0">download your official search result for £15</a>.</p>
+
+        {% set benefitsHtml %}
+          <p class="govuk-!-margin-bottom-2">An official search includes:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>a secure (tamper-proof) document, digitally signed and guaranteed by HM Land Registry</li>
+            <li>Local Land Charge boundary on a map</li>
+            <li>link to source documents</li>
+            <li>free repeat searches for 6 months</li>
+          </ul>
+        {% endset %}
+        {{ govukDetails({
+          summaryText: 'Benefits of an official search',
+          html: benefitsHtml
+        }) }}
+
         <h2 class="govuk-heading-m">
           Planning
         </h2>
