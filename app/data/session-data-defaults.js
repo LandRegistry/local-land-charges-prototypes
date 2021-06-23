@@ -20,6 +20,7 @@ Example usage:
 module.exports = {
 
   "local-authorities": [
+    "HM Land Registry",
     "Adur District Council",
     "Allerdale Borough Council",
     "Amber Valley Borough Council",

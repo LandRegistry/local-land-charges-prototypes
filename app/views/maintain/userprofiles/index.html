@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+	  items: [
+	    {
+	      text: "LLC prototypes",
+	      href: "/"
+	    },
+      {
+	      text: "Maintain prototypes",
+	      href: "../"
+	    }
+	  ]
+	}) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-l">
+        User profiles
+      </h1>
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+      <p>Overview of feature needs writing!</p>
+
+      <h2 class="govuk-heading-m">
+        Version 4
+      </h2>
+
+      <h3 class="govuk-heading-s">Changes</h3>
+      <p>Based on conversations with the team the following suggestions:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Swapped user detail page to first</li>
+        <li>Narrowed down list of users based on inputted info</li>
+        {# <li>email templates for notify and stop</li> #}
+      </ul>
+
+      {# <h3 class="govuk-heading-s">Research notes</h3>
+      <p>Information about the research.</p>
+      <p><a href="#0">View user research report</a>.<p> #}
+      <h3 class="govuk-heading-s">For internal adding users</h3>
+      {{ govukButton({
+        text: 'View prototype',
+        href: 'v4/dashboard'
+      }) }}
+
+      <h3 class="govuk-heading-s">For external adding users</h3>
+      {{ govukButton({
+        text: 'View prototype',
+        href: 'v5/dashboard'
+      }) }}
+
+      <h3 class="govuk-heading-s">Error message for 'Select user type' page</h3>
+      <p>Demonstrated on external adding users but applicable for both</p>
+      {{ govukButton({
+        text: 'View error message',
+        href: 'v6/error'
+      }) }}
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Version 3
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <p class='govuk-body'>This version consists of selecting responsibilities for users</p>
+            {{ govukButton({
+              text: 'View prototype',
+              href: 'v3/dashboard'
+            }) }}
+          </div>
+        </div>
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Version 2
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <p class='govuk-body'>This version consists of conditional questions.</p>
+            {{ govukButton({
+              text: 'View prototype',
+              href: 'v2/dashboard'
+            }) }}
+          </div>
+        </div>
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                Version 1
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+            <p class='govuk-body'>This version consists of radio buttons</p>
+            {{ govukButton({
+              text: 'View prototype',
+              href: 'v1/dashboard'
+            }) }}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
