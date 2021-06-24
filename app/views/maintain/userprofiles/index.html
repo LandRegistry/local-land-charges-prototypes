@@ -27,7 +27,7 @@
       <p>Overview of feature needs writing!</p>
 
       <h2 class="govuk-heading-m">
-        Version 4
+        Version 5
       </h2>
 
       <h3 class="govuk-heading-s">Changes</h3>
@@ -35,32 +35,85 @@
       <ul class="govuk-list govuk-list--bullet">
         <li>Swapped user detail page to first</li>
         <li>Narrowed down list of users based on inputted info</li>
+        <li>Let authority selection conditionally reveal appropriate user profiles </li>
         {# <li>email templates for notify and stop</li> #}
       </ul>
+
+      <p>Due to limitations I have had to create different prototypes to showcase the different user journeys as below:</p>
 
       {# <h3 class="govuk-heading-s">Research notes</h3>
       <p>Information about the research.</p>
       <p><a href="#0">View user research report</a>.<p> #}
-      <h3 class="govuk-heading-s">For internal adding users</h3>
+      <h3 class="govuk-heading-s">For internal users adding internal (HMLR) users</h3>
       {{ govukButton({
         text: 'View prototype',
-        href: 'v4/dashboard'
+        href: 'v7/dashboard'
       }) }}
 
-      <h3 class="govuk-heading-s">For external adding users</h3>
+      <h3 class="govuk-heading-s">For internal users adding external (LA) users</h3>
       {{ govukButton({
         text: 'View prototype',
-        href: 'v5/dashboard'
+        href: 'v8/dashboard'
       }) }}
 
-      <h3 class="govuk-heading-s">Error message for 'Select user type' page</h3>
-      <p>Demonstrated on external adding users but applicable for both</p>
+      <h3 class="govuk-heading-s">For internal users adding external (OOA) users</h3>
       {{ govukButton({
-        text: 'View error message',
-        href: 'v6/error'
+        text: 'View prototype',
+        href: 'v9/dashboard'
       }) }}
+
+      <h3 class="govuk-heading-s">For external users adding external (LA) users</h3>
+      {{ govukButton({
+        text: 'View prototype',
+        href: 'v10/dashboard'
+      }) }}
+
+      <h3 class="govuk-heading-s">For external users adding external (00A) users</h3>
+      {{ govukButton({
+        text: 'View prototype',
+        href: 'v11/dashboard'
+      }) }}
+
+
 
       <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Version 4
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <h3 class="govuk-heading-s">Changes</h3>
+            <p>Based on conversations with the team the following suggestions:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>Swapped user detail page to first</li>
+              <li>Narrowed down list of users based on inputted info</li>
+              {# <li>email templates for notify and stop</li> #}
+            </ul>
+
+            <p> <b> For internal users adding users <b> </p>
+            {{ govukButton({
+              text: 'View prototype',
+              href: 'v4/dashboard'
+            }) }}
+
+            <p> <b> For external users adding users <b> </p>
+            {{ govukButton({
+              text: 'View prototype',
+              href: 'v5/dashboard'
+            }) }}
+
+            <p> <b> Error message <b> </p>
+            {{ govukButton({
+              text: 'View prototype',
+              href: 'v6/dashboard'
+            }) }}
+
+          </div>
+        </div>
         <div class="govuk-accordion__section ">
           <div class="govuk-accordion__section-header">
             <h2 class="govuk-accordion__section-heading">
