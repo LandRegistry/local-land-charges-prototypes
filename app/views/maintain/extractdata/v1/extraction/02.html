@@ -257,17 +257,21 @@
 
   <div class=" govuk-grid-column-full" style="padding:30px 0px 0px 0px;">
 
-      <form action="02" method="submit">
-        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" type="submit">Download Data
-
-</button>
-
-
+    <form method="get" action="/public/images/extractiondata.csv">
+   <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" formaction="02" type="submit">Download Data</button>
 </form>
         </div>
 
         <div class="govuk-inset-text">
    Data reports containing more charges may take longer to download.
+</div>
+
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    This data report contains 160 charges
+  </strong>
 </div>
 
 <a href="dashboard">Return to main menu</a>
