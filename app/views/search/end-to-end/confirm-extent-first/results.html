@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% set query = data['search'] or 'S10 4BG' %}
+
+{% block beforeContent %}
+  {% include "includes/lang-switcher.html" %}
+  {{ govukBackLink({
+    text: 'Back',
+    href: 'search'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">
+          Search results for &lsquo;{{ query }}&rsquo;
+        </h1>
+
+        <p>45 addresses found:</p>
+        <ul class="govuk-list govuk-list--spa/ced">
+          <li>  <a href="#0"> 23 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 24 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> Flat 1, 27 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> Flat 2, 27 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 29 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 31 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 33 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 35 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 37 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 39 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 41 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 43 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 45 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 47 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 49 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 51 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 53 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 55 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 57 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 59 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 61 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 63 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 65 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 67 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 69 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 71 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="noextent.html"> 73 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="confirm02.html"> 75 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 77 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 79 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 81 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 83 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 85 Knatchbull Road, SE5 9QY</a> </li>
+          <li>  <a href="#0"> 87 Knatchbull Road, SE5 9QY</a> </li>
+
+        </ul>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items govuk-!-margin-bottom-" role="complementary">
+        <h2 class="govuk-heading-s" id="subsection-title">
+          Other ways to find a charge
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-list--spaced govuk-!-font-size-16">
+            <li><a href="#0">Search by browsing to a place using a map</a></li>
+            <li>Contact us on 0300 006 0444 if you are struggling to use this service</li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}

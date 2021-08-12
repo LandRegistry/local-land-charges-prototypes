@@ -21,36 +21,21 @@
       {% endif %}
 
       <h1 class="govuk-heading-l">
-  Check area is on register
+  {{ data['search-input'] }} is on the register
 </h1>
 
-<p class="govuk-body-m">Search for a local land charge on the HM Land Registry register using a postcode, area or streetname.</p>
-<p class="govuk-body-m">Some areas have not yet been migrated to HM Land Registry's register. In this case you will have to contact your <a href='https://www.local.gov.uk/our-support/guidance-and-resources/communications-support/digital-councils/social-media/go-further/a-z-councils-online'>Local Authority </a>to recieve information regarding Local Land Charges in your area.</p>
+<p class="govuk-body-m">The area you have searched for is on HM Land Registry's register.</p>
+<div class="govuk-inset-text">
+  In order to access the charge information HM Land Registry has on this area, you will need to sign in or create an account.
+</div>
 
-      <form method="post">
+{{ govukButton({
+  text: 'Sign in',
+  href: 'sign-in'
+}) }}
 
-        <div class="govuk-form-group">
-          <label class="govuk-label" for="one-half">
-            For example, ‘SE5 9QY’ or ‘Knatchbull Road’
-          </label>
-          <input class="govuk-input govuk-!-width-one-half" id="search-input" name="one-half" type="text"></div>
+</div>
 
-          {{ govukButton({
-            text: 'Search',
-            href: 'check-area-results'
-          }) }}
-
-        {# <h2 class="govuk-heading-m govuk-!-margin-top-3">
-          Other ways to find a charge
-        </h2>
-        <ul class="govuk-list govuk-list--spaced">
-          <li><a href="#0">Search by browsing to a place using a map</a></li>
-          <li>Contact us on 0300 006 0444 if you are struggling to use this service</li>
-        </ul> #}
-
-      </form>
-
-    </div>
 
     <div class="govuk-grid-column-one-third">
 
