@@ -27,7 +27,7 @@
       <p>Overview of feature needs writing!</p>
 
       <h2 class="govuk-heading-m">
-        Version 2
+        Version 3
       </h2>
 
       {# <h3 class="govuk-heading-s">Changes</h3>
@@ -52,31 +52,59 @@
 
       {{ govukButton({
         text: 'View prototype',
-        href: 'v2/start'
+        href: 'v3/start'
       }) }}
 
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Version 2
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+
+            <p>The second round of recomendations were done by the previous designer, Chris A.</p>
+
+            {{ govukButton({
+              text: 'View prototype',
+              href: 'v2/start'
+            }) }}
 
 
 
+          </div>
+        </div>
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Version 1
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+
+            <p>The initial round of recomendations were done by the previous designer, Ash O</p>
+
+            {{ govukButton({
+              text: 'View feedback slide deck',
+              href: 'https://docs.google.com/presentation/d/1wDEABXNlojMy9CRSm7EIQ0QVnarmYX026YabJ-nrRRY/edit#slide=id.gbd37c5e0f2_0_119'
+            }) }}
+
+            {{ govukButton({
+              text: 'View Prototype',
+              href: 'v1'
+            }) }}
 
 
-      {% set v1 %}
-        <p>The initial recomendations were done by the previous designer, Ash O.</p>
 
-        {{ govukButton({
-          text: 'View feedback slide deck',
-          href: 'https://docs.google.com/presentation/d/1wDEABXNlojMy9CRSm7EIQ0QVnarmYX026YabJ-nrRRY/edit#slide=id.gbd37c5e0f2_0_119'
-        }) }}
-      {% endset %}
+          </div>
+        </div>
 
-      {{ govukAccordion({
-        items: [
-          {
-            heading: { text: 'Version 1' },
-            content: { html: v1 }
-          }
-        ]
-      }) }}
+
 
     </div>
   </div>

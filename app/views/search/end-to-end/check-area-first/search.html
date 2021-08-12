@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+  {% include "includes/lang-switcher.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {% if error %}
+        {{ govukErrorSummary({
+          titleText: 'There is a problem',
+          errorList: [
+            {
+              text: error,
+              href: '#search-error'
+            }
+          ]
+        }) }}
+      {% endif %}
+
+      <h1 class="govuk-heading-l">
+  Search by postcode or streetname
+</h1>
+
+<p class="govuk-body-m">Search for a local land charge on the HM Land Registry register using a postcode or streetname.</p>
+
+      <form method="post">
+
+        {{ govukInput({
+          id: 'search',
+          name: 'search',
+          value: data['search'] or 'KY15 5EH',
+          classes: 'govuk-input--width-20',
+          formGroup: {
+            classes: 'govuk-!-margin-bottom-3'
+          },
+
+          hint: {
+            html: 'For example, &lsquo;SE5 9QY&rsquo; or &lsquo;Knatchbull Road&rsquo;'
+          },
+          errorMessage: {
+            text: error
+          } if error
+        }) }}
+
+        <button class="govuk-button" data-module="govuk-button" onclick="window.location.href='/search/end-to-end/sign-in-first/results'">
+        Search
+        </button>
+
+        {# <h2 class="govuk-heading-m govuk-!-margin-top-3">
+          Other ways to find a charge
+        </h2>
+        <ul class="govuk-list govuk-list--spaced">
+          <li><a href="#0">Search by browsing to a place using a map</a></li>
+          <li>Contact us on 0300 006 0444 if you are struggling to use this service</li>
+        </ul> #}
+
+      </form>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items govuk-!-margin-bottom-" role="complementary">
+        <h2 class="govuk-heading-s" id="subsection-title">
+          Other ways to find a charge
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-list--spaced govuk-!-font-size-16">
+            <li><a href="#0">Search by title number</a></li>
+            <li><a href="#0">Search by using a map</a></li>
+            <li>Contact HM Land Registry on <b>0300 006 0444</b> if you are struggling to use this service</li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
