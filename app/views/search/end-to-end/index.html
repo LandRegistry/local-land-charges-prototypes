@@ -8,7 +8,7 @@
 	      href: "/"
 	    },
       {
-	      text: "Maintain prototypes",
+	      text: "Search prototypes",
 	      href: "../"
 	    }
 	  ]
@@ -19,39 +19,23 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
       <h1 class="govuk-heading-l">
-        Searching for a charge
+        Search for a Local Land Charge
       </h1>
     </div>
 
     <div class="govuk-grid-column-two-thirds">
-      <p>Overview of feature needs writing!</p>
+      <p>The following prototypes reflect varying flows developed for user research on the end-to-end search service (Aug/Sept 2021)</p>
 
       <h2 class="govuk-heading-m">
-        No confirm, sign in last prototype
+        1. Sign in first
       </h2>
       {{ govukButton({
         text: 'View prototype',
-        href: 'no-confirm-sign-in-last/start'
+        href: 'sign-in-first/start'
       }) }}
 
       <h2 class="govuk-heading-m">
-        No confirm, sign in first prototype
-      </h2>
-      {{ govukButton({
-        text: 'View prototype',
-        href: 'no-confirm-sign-in-first/start'
-      }) }}
-
-      <h2 class="govuk-heading-m">
-        Confirm extent first prototype
-      </h2>
-      {{ govukButton({
-        text: 'View prototype',
-        href: 'confirm-extent-first/start'
-      }) }}
-
-      <h2 class="govuk-heading-m">
-        Check area first prototype
+        2. Check area first
       </h2>
       {{ govukButton({
         text: 'View prototype',
@@ -59,7 +43,23 @@
       }) }}
 
       <h2 class="govuk-heading-m">
-        Sign in first prototype
+        3. Confirm extent first
+      </h2>
+      {{ govukButton({
+        text: 'View prototype',
+        href: 'confirm-extent-first/start'
+      }) }}
+
+      <h2 class="govuk-heading-m">
+        4. No confirm extent page - Sign in first
+      </h2>
+      {{ govukButton({
+        text: 'View prototype',
+        href: 'no-confirm-sign-in-first/start'
+      }) }}
+
+      <h2 class="govuk-heading-m">
+        5. No confirm extent page - Sign in last
       </h2>
 
       {# <h3 class="govuk-heading-s">Changes</h3>
@@ -84,7 +84,7 @@
 
       {{ govukButton({
         text: 'View prototype',
-        href: 'sign-in-first/start'
+        href: 'no-confirm-sign-in-last/start'
       }) }}
 
       <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">

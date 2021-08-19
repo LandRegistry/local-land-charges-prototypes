@@ -21,22 +21,22 @@
       {% endif %}
 
       <h1 class="govuk-heading-l">
-  Search by postcode or street name
+  Search by title number
 </h1>
 
-<p class="govuk-body-m">Search for a local land charge on the HM Land Registry register using a postcode or street name.</p>
+<p class="govuk-body-m">Search for a local land charge on the register using a title number</p>
 
       <form method="post">
 
         <div class="govuk-form-group">
           <div id="event-name-hint" class="govuk-hint">
-            For example, ‘SW1A 2AA’ or ‘High Street’
+            For example, ‘12345678’
           </div>
           <input class="govuk-input govuk-!-width-one-half" id="search-input" name="one-half" type="text"></div>
 
           {{ govukButton({
             text: 'Search',
-            href: 'results'
+            href: 'resultsbytitle'
           }) }}
         {# <h2 class="govuk-heading-m govuk-!-margin-top-3">
           Other ways to find a charge
@@ -58,8 +58,8 @@
         </h2>
         <nav role="navigation" aria-labelledby="subsection-title">
           <ul class="govuk-list govuk-list--spaced govuk-!-font-size-16">
+            <li><a href="search">Search by postcode or street name</a></li>
             <li><a href="searchbymap">Search by using a map</a></li>
-            <li><a href="search-by-title-number">Search by title number</a></li>
             <li>Contact HM Land Registry on <b>0300 006 0444</b> if you are struggling to use this service</li>
           </ul>
         </nav>
