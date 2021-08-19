@@ -13,22 +13,7 @@
 
 {% block main %}
   <div class="govuk-width-container {{ containerClasses }}">
-    {{ govukBreadcrumbs({
-      items: [
-        {
-          text: 'Home',
-          href: '#0'
-        },
-        {
-          text: 'Housing and local services',
-          href: '#0'
-        },
-        {
-          text: 'Owning and renting a property',
-          href: '#0'
-        }
-      ]
-    }) }}
+  
 
     <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
       <div class="govuk-grid-row">
@@ -41,19 +26,21 @@
 
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
-          <p>The HM Land Registry holds a register of all local land charges on land or property.</p>
-          <p>Use this service to:</p>
+          <p> HM Land Registry hold a register of all local land charges.Local land charges are financial charges or restrictions on the use of a piece of land or property.
+</p>
+
+          <p>This includes:</p>
 
           <ul class="govuk-list govuk-list--bullet">
-            <li>search the register for local land charges</li>
-            <li>view search results free of charge</li>
-            <li>purchase an official search certificate for £15</li>
-            <li>repeat or view an official search done in the last 6 months</li>
+            <li>planning decisions</li>
+            <li>road agreements</li>
+            <li>tree preservation orders</li>
+            <li>conservation areas and listed building notices</li>
+            <li>environmental health notices</li>
           </ul>
 
-          <div class="govuk-inset-text">You will need to create an account to use this service </div>
-
-          <p>By starting a search you agree to our <a href="#0">terms of use</a>. For further information about the service see <a href="#0">Practice Guide 79</a>.</p>
+          <div class="govuk-inset-text">To search the register, you will need to create an account.
+</div>
 
           {{ govukButton({
             text: 'Start now',
