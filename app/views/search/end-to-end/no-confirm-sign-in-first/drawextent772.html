@@ -4,7 +4,7 @@
   {% include "includes/lang-switcher.html" %}
   {{ govukBackLink({
     text: 'Back',
-    href: 'search'
+    href: 'results'
   }) }}
 {% endblock %}
 
@@ -12,26 +12,29 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
 
-      <h1 class="govuk-heading-l">Find an extent area by map</h1>
+      <h1 class="govuk-heading-l">Draw extent area for “77 Knatchbull Road, SE5 9QY”</h1>
       <p class="govuk-body-m">Before you can view a local land charge, first you will need to locate an area of land. This is known as an extent area.</p>
-<p class="govuk-body-m">Find a location on the map and use the <b>'Add area'</b> control to draw the area you would like to search. You can also edit and delete areas drawn.</p>
+      <p class="govuk-body-m">Use the <b>'Add area'</b> control to draw an extent area for this address. You can also edit and delete areas drawn.</p>
 
       <button disabled="disabled" aria-disabled="true" class="govuk-button govuk-button--disabled" data-module="govuk-button">
-          Search this area
-    </button>
+        Search this extent
+      </button>
 
-    <ul class="govuk-list">
+      <ul class="govuk-list">
   <li>
-  <a class="govuk-link" href="#">Learn more about how to use this map</a>
+    <a class="govuk-link" href="#">Learn more about how to use this map</a>
   </li>
   </ul>
 
-  <p class="govuk-body-s">Use of address and mapping data (including the link between the address and it's location) is subject to <a href="editextent">Ordenance Survey License Terms and Conditions</a>.</p>
+      <p class="govuk-body-s">Use of address and mapping data (including the link between the address and it's location) is subject to <a href="editextent">Ordenance Survey License Terms and Conditions</a>.</p>
+
+
+
     </div>
 
     <div class="govuk-grid-column-two-thirds">
       <img src="/public/images/mapkey.png" alt="Map key" style="width:100%">
-      <a href="searchbymap2"><img src="/public/images/searchbymap.png" alt="Confirm extent" style="width:100%"></a>
+      <a href="drawextent773"><img src="/public/images/drawextent772.png" alt="Confirm extent" style="width:100%"></a>
 
 
 
