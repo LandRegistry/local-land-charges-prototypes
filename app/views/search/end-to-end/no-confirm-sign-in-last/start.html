@@ -13,22 +13,7 @@
 
 {% block main %}
   <div class="govuk-width-container {{ containerClasses }}">
-    {{ govukBreadcrumbs({
-      items: [
-        {
-          text: 'Home',
-          href: '#0'
-        },
-        {
-          text: 'Housing and local services',
-          href: '#0'
-        },
-        {
-          text: 'Owning and renting a property',
-          href: '#0'
-        }
-      ]
-    }) }}
+
 
     <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
       <div class="govuk-grid-row">
@@ -41,18 +26,28 @@
 
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
+          <p>Local land charges are financial charges or restrictions on the use of a piece of land or property. This includes:
+</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>planning decisions</li>
+            <li>road agreements</li>
+            <li>tree preservation orders</li>
+            <li>conservation areas and listed building notices</li>
+            <li>environmental health notices</li>
+          </ul>
+
+          <p>HM Land Registry hold a register of all local land charges.</p>
           <p>Use this service to:</p>
 
           <ul class="govuk-list govuk-list--bullet">
-            <li>search for restrictions (local land charges) on land or property</li>
-            <li>view search results free of charge</li>
-            <li>get an official search certificate for £15 (account required)</li>
-            <li>repeat or view an official search done in the last 6 months (account required)</li>
+            <li>search the register and view results for free</li>
+            <li>purchase an official search certificate for £15</li>
+            <li>repeat or view official searches done in the last 6 months</li>
           </ul>
 
-          <div class="govuk-inset-text">An account is required to view search results </div>
-
-          <p>By starting a search you agree to our <a href="#0">terms of use</a>. For further information about the service see <a href="#0">Practice Guide 79</a>.</p>
+          <div class="govuk-inset-text">To search the register, you will need to create an account.
+</div>
 
           {{ govukButton({
             text: 'Start now',
@@ -61,19 +56,6 @@
             classes: 'govuk-!-margin-bottom-9'
           }) }}
 
-
-            <h2 class="govuk-heading-m">What is a local land charge?</h2>
-
-            <p>A local land charge is a restriction on a piece of land or property that can limit its use or bind the owner to a payment of a sum of money.</p>
-
-            <p>Local land charges can include: </p>
-            <ul class="govuk-list govuk-list--bullet">
-              <li>planning decisions</li>
-              <li>road agreements</li>
-              <li>tree preservation orders</li>
-              <li>conservation areas and listed building notices</li>
-              <li>Environmental health notices</li>
-            </ul>
 
         </div>
 

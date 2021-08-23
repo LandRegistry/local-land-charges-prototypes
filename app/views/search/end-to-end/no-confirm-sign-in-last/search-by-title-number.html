@@ -21,11 +21,10 @@
       {% endif %}
 
       <h1 class="govuk-heading-l">
-  Find an extent area
+Find an extent area by title number
 </h1>
 
 <p class="govuk-body-m">Before you can view a local land charge, first you need to identify a property or area of land. This is known as extent area.</p>
-
 
 <div class="govuk-inset-text">
   Not all areas are available on our register yet. If you cannot find an area, contact your local authority for information about local land charges.
@@ -33,12 +32,9 @@
 
       <form method="post">
 
-        <h2 class="govuk-heading-m govuk-!-margin-top-3">
-          Search by postcode or street name
-        </h2>
         <div class="govuk-form-group">
           <div id="event-name-hint" class="govuk-hint">
-            For example, ‘SW1A 2AA’ or ‘High Street’
+            For example, ‘12345678’
           </div>
           <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text"></div>
 
@@ -46,7 +42,7 @@
 
           {{ govukButton({
             text: 'Search',
-            href: 'results'
+            href: 'resultsbytitle'
           }) }}
         {# <h2 class="govuk-heading-m govuk-!-margin-top-3">
           Other ways to find a charge
@@ -69,7 +65,7 @@
         <nav role="navigation" aria-labelledby="subsection-title">
           <ul class="govuk-list govuk-list--spaced govuk-!-font-size-16">
             <li><a href="searchbymap">Find by using a map</a></li>
-            <li><a href="search-by-title-number">Find by title number</a></li>
+            <li><a href="search">Find by postcode or street name</a></li>
             <li>Contact HM Land Registry on <b>0300 006 0444</b> if you are struggling to use this service</li>
           </ul>
         </nav>
