@@ -2,16 +2,16 @@
 
 {% block beforeContent %}
   {% include "includes/lang-switcher.html" %}
+
 {% endblock %}
 
-{% block header %}
+{% block content %}
+
+{# {% block header %}
   <!-- Blank header with no service name for the start page -->
   {{ govukHeader() }}
-{% endblock %}
+{% endblock %} #}
 
-
-
-{% block main %}
   <div class="govuk-width-container {{ containerClasses }}">
 
 
@@ -26,18 +26,19 @@
 
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
-          <p>Local land charges are financial charges or restrictions on the use of a property or area of land. This can include:
+          <p>Local land charges are restrictions on the use of a property or area of land. This can include:
 </p>
 
           <ul class="govuk-list govuk-list--bullet">
             <li>planning decisions</li>
             <li>road agreements</li>
             <li>tree preservation orders</li>
-            <li>conservation areas and listed building notices</li>
+            <li>conservation areas</li>
+            <li>listed buildings</li>
             <li>environmental health notices</li>
           </ul>
 
-          <p>HM Land Registry hold a register of all local land charges.</p>
+          <p>HM Land Registry hold a register of most local land charges across the UK.</p>
           <p>You can use this service to search the register for free or buy an official search certificate for £15.</p>
 
           <div class="govuk-inset-text">To search the register, you will need to create an account.
@@ -79,6 +80,16 @@
                 <li>
                   <a href="#">
                     Contact HM Land Registry
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Practice Guide 79
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Find out when your local authority will be migrated to this service
                   </a>
                 </li>
               </ul>
