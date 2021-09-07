@@ -26,237 +26,208 @@
         <p>Not the right area? <a href="search">Search again</a>.</p>
 
 
-
         <h2 class="govuk-heading-m">
           Planning
         </h2>
-        <div class="govuk-accordion" data-module="govuk-accordion">
-          {% for i in range(2, 100, 17) %}
+        <h2 class="govuk-heading-s">Charge type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Creation date</h2>
 
-            <div class="govuk-accordion__section">
-              <div class="govuk-accordion__section-header govuk-!-padding-top-2 govuk-!-padding-bottom-2">
-                <h3 class="govuk-accordion__section-heading">
-                  <span class="govuk-accordion__section-button govuk-!-font-size-19">
-                    LLC-F{{ range(1, 51) | random }}F{{ range(1, 51) | random }} &ndash; Conditional planning consent
-                  </span>
-                </h3>
-              </div>
-              <div class="govuk-accordion__section-content">
-                {{ govukSummaryList({
-                  classes: 'govuk-summary-list--no-border',
-                  rows: [
-                    {
-                      key: {
-                        text: 'Description'
-                      },
-                      value: {
-                        text: 'Installation of a part timber, part glazed veranda to the rear ground floor and replacement of the existing ground windows with new timber double doors'
-                      }
-                    },
-                    {
-                      key: {
-                        text: 'Originating authority'
-                      },
-                      value: {
-                        text: 'London Borough of Lambeth'
-                      }
-                    },
-                    {
-                      key: {
-                        text: 'Authority reference'
-                      },
-                      value: {
-                        text: '17/04366/FUL'
-                      }
-                    },
-                    {
-                      key: {
-                        text: 'Creation date'
-                      },
-                      value: {
-                        text: today | date("subtract", i, "months") | date("D MMMM YYYY")
-                      }
-                    },
-                    {
-                      key: {
-                        text: 'Registration date'
-                      },
-                      value: {
-                        text: '08 January 2018'
-                      }
-                    },
-                    {
-                      key: {
-                        text: 'Law'
-                      },
-                      value: {
-                        html: 'Town and Country Planning Act 1990 section 70'
-                      }
-                    },
-                    {
-                      key: {
-                        text: 'Legal document'
-                      },
-                      value: {
-                        html: 'Planning permission'
-                      }
-                    }
-                  ]
-                }) }}
+        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+          <p> <b>Listed Building</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04 July 2020</p>
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+      <div class="govuk-grid-row">
+       <div class="govuk-grid-column-one-third">
+         <p class="govuk-body"><b>Description</b></p>
+         </div>
 
-                {# {
-                  key: {
-                    text: 'Location'
-                  },
-                  value: {
-                    text: '133, Warwick Road'
-                  }
-                },
-                {
-                  key: {
-                    text: 'Category'
-                  },
-                  value: {
-                    text: 'Planning - Conditional planning consent'
-                  }
-                },
-                {
-                  key: {
-                    text: 'Description'
-                  },
-                  value: {
-                    text: 'Change of use to 1 flats & 4 bedsits Approved subject to conditions'
-                  }
-                },
-                {
-                  key: {
-                    text: 'HM Land Registry reference'
-                  },
-                  value: {
-                    text: 'LLC-F9F8'
-                  }
-                }#}
-              </div>
-            </div>
-
-          {% endfor %}
-
-        </div>
-        <h2 class="govuk-heading-m">
-          Other
-        </h2>
-        <div class="govuk-accordion" data-module="govuk-accordion">
-          {% for i in range(2, 100, 17) %}
-
-            <div class="govuk-accordion__section">
-              <div class="govuk-accordion__section-header govuk-!-padding-top-2 govuk-!-padding-bottom-2">
-                <h3 class="govuk-accordion__section-heading">
-                  <span class="govuk-accordion__section-button govuk-!-font-size-19">
-                    LLC-F{{ range(1, 51) | random }}F{{ range(1, 51) | random }} &ndash; Smoke control order
-                  </span>
-                </h3>
-              </div>
-              <div class="govuk-accordion__section-content">
-                {{ govukSummaryList({
-                  classes: 'govuk-summary-list--no-border',
-                  rows: [
-                    {
-                      key: {
-                        text: 'Description'
-                      },
-                      value: {
-                        text: 'Not provided'
-                      }
-                    },
-                    {
-                      key: {
-                        text: 'Originating authority'
-                      },
-                      value: {
-                        text: 'London Borough of Lambeth'
-                      }
-                    },
-                    {
-                      key: {
-                        text: 'Authority reference'
-                      },
-                      value: {
-                        text: 'SMOKE/1234'
-                      }
-                    },
-                    {
-                      key: {
-                        text: 'Creation date'
-                      },
-                      value: {
-                        text: today | date("subtract", i, "months") | date("D MMMM YYYY")
-                      }
-                    },
-                    {
-                      key: {
-                        text: 'Registration date'
-                      },
-                      value: {
-                        text: '08 January 2019'
-                      }
-                    },
-                    {
-                      key: {
-                        text: 'Law'
-                      },
-                      value: {
-                        html: 'Town and Country Planning Act 1990 section 70'
-                      }
-                    },
-                    {
-                      key: {
-                        text: 'Legal document'
-                      },
-                      value: {
-                        html: 'Planning permission'
-                      }
-                    }
-                  ]
-                }) }}
-
-                {# {
-                  key: {
-                    text: 'Location'
-                  },
-                  value: {
-                    text: '133, Warwick Road'
-                  }
-                },
-                {
-                  key: {
-                    text: 'Category'
-                  },
-                  value: {
-                    text: 'Planning - Conditional planning consent'
-                  }
-                },
-                {
-                  key: {
-                    text: 'Description'
-                  },
-                  value: {
-                    text: 'Change of use to 1 flats & 4 bedsits Approved subject to conditions'
-                  }
-                },
-                {
-                  key: {
-                    text: 'HM Land Registry reference'
-                  },
-                  value: {
-                    text: 'LLC-F9F8'
-                  }
-                }#}
-              </div>
-            </div>
-
-          {% endfor %}
+       <div class="govuk-grid-column-two-thirds">
+         <p class="govuk-body">	Installation of a part timber, part glazed veranda to the rear ground floor and replacement of the existing ground windows with new timber double doors</p>
+       </div>
+     </div>
+     <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <p class="govuk-body"><b>Originating authority</b></p>
         </div>
 
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body">	London Borough of Lambeth </p>
+        </div>
+    </div>
+    <div class="govuk-grid-row">
+     <div class="govuk-grid-column-one-third">
+       <p class="govuk-body"><b>Authority Reference</b></p>
+       </div>
+
+     <div class="govuk-grid-column-two-thirds">
+       <p class="govuk-body">	17/04366/FUL</p>
+     </div>
+   </div>
+   <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <p class="govuk-body"><b>Registration date</b></p>
+      </div>
+
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body">08 January 2018</p>
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+   <div class="govuk-grid-column-one-third">
+     <p class="govuk-body"><b>Law</b></p>
+     </div>
+
+   <div class="govuk-grid-column-two-thirds">
+     <p class="govuk-body">Town and Country Planning Act 1990 section 70</p>
+   </div>
+ </div>
+ <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <p class="govuk-body"><b>Legal document</b></p>
+    </div>
+
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body">Planning permission</p>
+  </div>
+</div>
+
+  </div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+          <p> <b>Listed Building</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13 April 2018</p>
+          </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+      <div class="govuk-grid-row">
+       <div class="govuk-grid-column-one-third">
+         <p class="govuk-body"><b>Description</b></p>
+         </div>
+
+       <div class="govuk-grid-column-two-thirds">
+         <p class="govuk-body">	Installation of a part timber, part glazed veranda to the rear ground floor and replacement of the existing ground windows with new timber double doors</p>
+       </div>
+     </div>
+     <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <p class="govuk-body"><b>Originating authority</b></p>
+        </div>
+
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body">	London Borough of Lambeth </p>
+        </div>
+    </div>
+    <div class="govuk-grid-row">
+     <div class="govuk-grid-column-one-third">
+       <p class="govuk-body"><b>Authority Reference</b></p>
+       </div>
+
+     <div class="govuk-grid-column-two-thirds">
+       <p class="govuk-body">	17/04372/FUL</p>
+     </div>
+   </div>
+   <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <p class="govuk-body"><b>Registration date</b></p>
+      </div>
+
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body">31 May 2016</p>
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+   <div class="govuk-grid-column-one-third">
+     <p class="govuk-body"><b>Law</b></p>
+     </div>
+
+   <div class="govuk-grid-column-two-thirds">
+     <p class="govuk-body">Town and Country Planning Act 1990 section 70</p>
+   </div>
+ </div>
+ <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <p class="govuk-body"><b>Legal document</b></p>
+    </div>
+
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body">Planning permission</p>
+  </div>
+</div>  </div>
+  </div>
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+          <p> <b>Listed Building</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30 November 1978</p>
+          </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+      <div class="govuk-grid-row">
+       <div class="govuk-grid-column-one-third">
+         <p class="govuk-body"><b>Description</b></p>
+         </div>
+
+       <div class="govuk-grid-column-two-thirds">
+         <p class="govuk-body">	Installation of a part timber, part glazed veranda to the rear ground floor and replacement of the existing ground windows with new timber double doors</p>
+       </div>
+     </div>
+     <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <p class="govuk-body"><b>Originating authority</b></p>
+        </div>
+
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body">	London Borough of Lambeth </p>
+        </div>
+    </div>
+    <div class="govuk-grid-row">
+     <div class="govuk-grid-column-one-third">
+       <p class="govuk-body"><b>Authority Reference</b></p>
+       </div>
+
+     <div class="govuk-grid-column-two-thirds">
+       <p class="govuk-body">	17/04321/FUL</p>
+     </div>
+   </div>
+   <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <p class="govuk-body"><b>Registration date</b></p>
+      </div>
+
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body">08 January 2006</p>
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+   <div class="govuk-grid-column-one-third">
+     <p class="govuk-body"><b>Law</b></p>
+     </div>
+
+   <div class="govuk-grid-column-two-thirds">
+     <p class="govuk-body">Town and Country Planning Act 1990 section 70</p>
+   </div>
+ </div>
+ <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <p class="govuk-body"><b>Legal document</b></p>
+    </div>
+
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body">Planning permission</p>
+  </div>
+</div>  </div>
+  </div>
+</div>
+
+      </div>
     </div>
 
     <div class="govuk-grid-column-one-third">
