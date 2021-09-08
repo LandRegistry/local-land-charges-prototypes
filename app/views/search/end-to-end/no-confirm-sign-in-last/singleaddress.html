@@ -2,6 +2,10 @@
 
 {% block beforeContent %}
   {% include "includes/lang-switcher.html" %}
+  {{ govukBackLink({
+    text: 'Back',
+    href: 'results'
+  }) }}
 {% endblock %}
 
 {% block content %}
