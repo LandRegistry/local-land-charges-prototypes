@@ -9,31 +9,22 @@
 
 {% block content %}
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third">
+    <div class="govuk-grid-column-full">
 
-      <h1 class="govuk-heading-l">The extent area searched is not on the register</h1>
+      <h1 class="govuk-heading-l">Extent area is not available</h1>
 
-      <p> Currently, we are migrating local land charges onto the register, at present not all local authorities have been migrated.</p>
 
-      <p>If you believe this extent should be on the register or would like to verify this is not on the register you will need to draw an extent area for this address on the map.</p>
+      <p class="govuk-body-m">We do not have a registered extent area for:<b> 77 Knatchbull Road, London SE5 9QY</b>.</p>
 
       <div class="govuk-inset-text">
-        The full extent of the area drawn may not be on the register.
+        To continue, draw an extent area for the address you want to search.
       </div>
-      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='search.html'">Start a new search</button>
-      <p> <a class="govuk-link" href="drawextent77">Draw extent</a> </p>
+      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='drawextent77.html'">Draw extent</button>
+      <p> <a class="govuk-link" href="search">Start a new search</a> </p>
 
 
     </div>
 
-    <div class="govuk-grid-column-two-thirds">
-      {# <img src="/public/images/mapdialogue.png" alt="Confirm extent" style="width:100%"> #}
-      <img src="/public/images/extent-notonregister-unavailable.png" alt="Confirm extent" style="width:100%">
-
-
-
-
-    </div>
 
 
   </div>

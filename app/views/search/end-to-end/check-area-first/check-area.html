@@ -21,22 +21,22 @@
       {% endif %}
 
       <h1 class="govuk-heading-l">
-  Check if an area is available on  the register
+  Check if your local authority has moved to this service
 </h1>
 
-<p class="govuk-body-m">Before you can find a local land charge, first you need to identify a property or area of land. This is known as an extent area.</p>
+<p class="govuk-body-m">Before you can find a local land charge, first you need to find out if your local authority is available on the service.</p>
 <div class="govuk-inset-text">
-  Not all areas are available on our register yet. If you cannot find an area, contact your local authority for information about local land charges.
+ <p>If you have recently used this service and know your local authority is available, you can <a class="govuk-link govuk-body-m" href="sign-in">skip this page</a>.
 </div>
 
       <form method="post">
 
         <h2 class="govuk-heading-m govuk-!-margin-top-3">
-          Search by postcode or street name
+          Search local authority
         </h2>
         <div class="govuk-form-group">
           <div id="event-name-hint" class="govuk-hint">
-            For example, ‘SW1A 2AA’ or ‘High Street’
+            For example, ‘Fife Council’
           </div>
           <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text"></div>
 
@@ -46,6 +46,8 @@
             text: 'Search',
             href: 'notavailable'
           }) }}
+
+
 
         {# <h2 class="govuk-heading-m govuk-!-margin-top-3">
           Other ways to find a charge
