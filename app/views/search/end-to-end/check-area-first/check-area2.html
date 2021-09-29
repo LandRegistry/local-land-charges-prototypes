@@ -38,7 +38,14 @@
           <div id="event-name-hint" class="govuk-hint">
             For example, ‘Cornwall Council’
           </div>
-          <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text"></div>
+          <select class="govuk-select" name="choose-country" id="choose-country">
+    <option value="territory:A-Z"> </option>
+    <option value="territory:CA-CZ">Cornwall Council</option>
+    <option value="territory:CA-CO">City of London Corporation</option>
+    <option value="territory:CA-CO">Corby Borough Council</option>
+    <option value="territory:LA-LZ">Lambeth Borough of London</option>
+    <option value="territory:LA-LE">Vale of Glamorgan Council</option>
+    </select>
 
           <p class="govuk-body-m">By starting a search you agree to our <a href="#0">terms of use</a>. For further information about the service see <a href="#0">Practice Guide 79</a>.</p>
 
@@ -46,6 +53,8 @@
             text: 'Search',
             href: 'isavailable'
           }) }}
+
+        </div>
 
 
 

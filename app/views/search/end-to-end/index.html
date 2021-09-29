@@ -42,54 +42,47 @@
         href: 'check-area-first/start'
       }) }}
 
-      <h2 class="govuk-heading-m">
-        3. Search – Confirm – Sign in - Results
-      </h2>
-      {{ govukButton({
-        text: 'Confirm extent first',
-        href: 'confirm-extent-first/start'
-      }) }}
-
-      <h2 class="govuk-heading-m">
-        4. Sign in – Search - Results
-      </h2>
-
-      {{ govukButton({
-        text: 'No confirm extent page',
-        href: 'no-confirm-sign-in-first/start'
-      }) }}
-
-      <h2 class="govuk-heading-m">
-        5. Search - Sign in - Results
-      </h2>
-
-
-      {# <h3 class="govuk-heading-s">Changes</h3>
-      <p>Based on conversations with the team the follow changes have been made:</p>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>new link on landing page</li>
-        <li>LA lookup on separate page</li>
-        <li>if already set show edit version of the page with pre-filled values</li>
-        <li>if disabled show time left and be able to turn off</li>
-      </ul> #}
-
-      {# <h3 class="govuk-heading-s">Research notes</h3>
-      <p>Information about the research.</p>
-      <p><a href="#0">View user research report</a>.<p> #}
-
-      {# <h3 class="govuk-heading-s">Prototype notes</h3>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>Adur District Council will show as thresholds disabled</li>
-        <li>Bournemouth, Christchurch and Poole Council will show as thresholds set</li>
-        <li>Any other LA will show as adding new thresholds</li>
-      </ul> #}
-
-      {{ govukButton({
-        text: 'No confirm extent page',
-        href: 'no-confirm-sign-in-last/start'
-      }) }}
-
       <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Version 3
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+
+            <p>The additional 3 user flows that were not successful in user testing</p>
+
+            <h2 class="govuk-heading-m">
+              3. Search – Confirm – Sign in - Results
+            </h2>
+            {{ govukButton({
+              text: 'Confirm extent first',
+              href: 'confirm-extent-first/start'
+            }) }}
+
+            <h2 class="govuk-heading-m">
+              4. Sign in – Search - Results
+            </h2>
+
+            {{ govukButton({
+              text: 'No confirm extent page',
+              href: 'no-confirm-sign-in-first/start'
+            }) }}
+
+            <h2 class="govuk-heading-m">
+              5. Search - Sign in - Results
+            </h2>
+
+            {{ govukButton({
+              text: 'No confirm extent page',
+              href: 'no-confirm-sign-in-last/start'
+            }) }}
+
+          </div>
+        </div>
         <div class="govuk-accordion__section ">
           <div class="govuk-accordion__section-header">
             <h2 class="govuk-accordion__section-heading">

@@ -59,3 +59,8 @@ $govuk-assets-path: '/govuk/assets/';
     right: 5px;
   }
 }
+
+
+.autocomplete__wrapper * {
+  @include govuk-typography-common();
+}
