@@ -36,9 +36,14 @@
           <div id="event-name-hint" class="govuk-hint">
             For example, 'Cornwall Council’
           </div>
-          <div class="govuk-form-group">
-    <input class="govuk-input" id="event-name" name="event-name" type="text">
-  </div>
+          <select class="govuk-select" name="choose-country" id="choose-country">
+    <option value="territory:A-Z"> </option>
+    <option value="territory:CA-CZ">Cornwall Council</option>
+    <option value="territory:CA-CO">City of London Corporation</option>
+    <option value="territory:CA-CO">Corby Borough Council</option>
+    <option value="territory:LA-LZ">Lambeth Borough of London</option>
+    <option value="territory:LA-LE">Vale of Glamorgan Council</option>
+    </select>
 <div class="govuk-!-padding-bottom-4"></div>
 
           <p class="govuk-body-m">By starting a search you agree to our <a href="#0">terms of use</a>. For further information about the service see <a href="#0">Practice Guide 79</a>.</p>
@@ -72,7 +77,7 @@
         </h2>
         <nav role="navigation" aria-labelledby="subsection-title">
           <ul class="govuk-list govuk-!-font-size-16" style="margin-right:-20px";>
-            
+
             <li>
               <a href="practice-guide">
                 Differences between free and paid searches
