@@ -24,3 +24,17 @@ accessibleAutocomplete.enhanceSelectElement({
   defaultValue: '',
   selectElement: document.querySelector('#select-local-autohority')
 })
+
+
+// Categories autocomplete
+accessibleAutocomplete.enhanceSelectElement({
+  defaultValue: '',
+  selectElement: document.querySelector('#choose-category')
+})
+
+
+// Sub-categories autocomplete
+accessibleAutocomplete.enhanceSelectElement({
+  defaultValue: '',
+  selectElement: document.querySelector('#choose-subcategory')
+})
