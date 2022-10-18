@@ -1,0 +1,307 @@
+{% extends "layout.html" %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+
+
+{% block main %}
+  <div class="govuk-width-container {{ containerClasses }}">
+
+    <div class="govuk-phase-banner">
+<p class="govuk-phase-banner__content">
+  <strong class="govuk-tag govuk-tag--pink">
+    prototype
+  </strong>
+  <span class="govuk-phase-banner__text">
+    This is not a full service. It is not production code and you might experience problems.
+  </span>
+</p>
+</div>
+
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full-width">
+
+          {# <span class="govuk-caption-xl">Dataset</span> #}
+    <h1 class="govuk-heading-xl">Accessibility statement for HM Land Registry – Local land charges, maintain service</h1>
+
+        </div>
+        <div class="govuk-grid-column-full-width">
+        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">This accessibility statement is for the maintain service website (link opens in new tab). <br>HM Land Registry maintain this.</p>
+
+      </div>
+    </div>
+
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-third">
+              <p>Contents</p>
+              <ul class="govuk-list">
+              <li>
+                - <a class="govuk-link" href="">How you can use this website</a>
+              </li>
+              <li>
+                - <a class="govuk-link" href="">How accessible this website is</a>
+              </li>
+              <li>
+                - <a class="govuk-link" href="">How to get information in an accessible format</a>
+              </li>
+              <li>
+                - <a class="govuk-link" href="">Enforcement procedure</a>
+              </li>
+              <li>
+                - <a class="govuk-link" href="">Technical information about this website's accessibility</a>
+              </li>
+              <li>
+                - <a class="govuk-link" href="">Issues that do not meet accessibility regulations</a>
+              </li>
+              <li>
+                - <a class="govuk-link" href="">Disproportionate burden</a>
+              </li>
+              <li>
+                - <a class="govuk-link" href="">How we tested this website</a>
+              </li>
+              <li>
+                - <a class="govuk-link" href="">What we are doing to improve </a>
+              </li>
+            </ul>
+            </div>
+
+            <div class="govuk-grid-column-two-thirds">
+
+              <p class="govuk-heading-l">How you can use this website</p>
+              <div class="govuk-grid-row">
+                  <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">On this website you should be able to:
+                    <ul class="govuk-list govuk-list--bullet govuk-!-margin-left-3">
+                    <li>change colours, contrast levels and fonts</li>
+                    <li>zoom in up to 200% without the text spilling off the screen</li>
+                    <li>navigate most of the website using only a keyboard</li>
+                    <li>navigate most of the website using speech recognition software</li>
+                    <li>listen to most of the website using a screen reader (including the most recent versions of <a class="govuk-link" href="0">JAWS (Job Access With Speech)</a>, <a class="govuk-link" href="0">NVDA (NonVisual Desktop Access)</a> and Voiceover</li>
+                  </ul>
+
+                  <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">We have made the website text as simple as possible to understand, aiming for a reading age of a 12-year-old. We only use technical terms where there is no easier wording to use without changing the meaning.</p>
+
+                  <div class="govuk-inset-text govuk-!-margin-left-3">
+                    AbilityNet has advice on making your device easier to use if you have a disability.</div>
+
+                  <p class="govuk-heading-l govuk-!-margin-left-3">How accessible this website is</p>
+                  <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">We run accessibility tests when a feature is new or changed. This means most of this website is fully accessible.</p>
+                  <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">We know the following parts are not accessible:
+                    <ul class="govuk-list govuk-list--bullet govuk-!-margin-left-3">
+                    <li>users with keyboard-only control cannot access all features of the map</li>
+                    <li>some screen readers and browsers may repeat, miss, or misread text on the page</li>
+                    <li>HTML errors flagged on certain pages</li>
+                    <li>Some pages do not handle certain kinds of error messages</li>
+                    </ul>
+
+                    <p class="govuk-heading-l govuk-!-margin-left-3">How to get information in an accessible format</p>
+                    <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">We are always looking to improve the accessibility of this website.</p>
+                    <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">You can contact us:
+                      <ul class="govuk-list govuk-list--bullet govuk-!-margin-left-3">
+                      <li>about any problems accessing information</li>
+                      <li>to request information in a different format, like audio recording, braille, <a class="govuk-link" href="0">accessible PDF (Portable Document Format)</a></li>
+                      <li>if you find any problems that are not listed on this page</li>
+                      <li>to tell us how we are not meeting accessibility requirements</li>
+                      </ul>
+
+                  <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+  <div class="govuk-accordion__section govuk-!-margin-left-3">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+          Complete our online form
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+      <p class='govuk-body'><p class="govuk-body govuk-!-font-weight-regular"><a class="govuk-link" href="https://customerhelp.landregistry.gov.uk/local-land-charges/">Submit an enquiry</a></p>
+      <p class='govuk-body'><p class="govuk-body govuk-!-font-weight-regular">We aim to get back to you in 5 working days.</p>
+  </div>
+  </div>
+  <div class="govuk-accordion__section govuk-!-margin-left-3">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+          Telephone
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+      <p class='govuk-body'><p class="govuk-body govuk-!-font-weight-regular">Telephone: 0300 006 0444 <br>
+
+      Monday to Friday, 9am to 5pm (except public holidays)</p>
+
+      <p class='govuk-body'><p class="govuk-body govuk-!-font-weight-regular">Welsh language: [telephone number] <br>
+
+      Monday to Friday, 8:30am to 5pm </p>
+
+      <p class='govuk-body'><p class="govuk-body govuk-!-font-weight-regular">We can also provide a text relay service for people who are D/deaf, hearing impaired or have a speech impediment. </p>
+
+    </div>
+  </div>
+
+</div>
+
+<p class="govuk-heading-l">Enforcement procedure</p>
+<div class="govuk-grid-row">
+    <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">The Equality and Human Rights Commission (EHRC) is responsible for enforcing the accessibility regulations. If you are not happy with how we respond to your complaint, <a class="govuk-link" href="https://www.equalityadvisoryservice.com/">contact the Equality Advisory and Support Service (EASS)</a>.</p>
+</div>
+
+    <p class="govuk-heading-l margin-left-3">Technical information about this website's accessibility</p>
+    <div class="govuk-grid-row">
+        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">HM Land Registry commit to making its website accessible, <a class="govuk-link" href="https://www.legislation.gov.uk/uksi/2018/852/contents/made">in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018</a>. </p>
+        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">This website is partially compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1</a>AA standard, due to the non-compliances listed below.</p>
+      </div>
+        <p class="govuk-heading-l margin-left-3">Issues that do not meet accessibility regulations</p>
+        <p class="govuk-heading-m margin-left-3">Issues with error messages</p>
+
+        {# <div class="govuk-grid-row">
+            <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">HM Land Registry commit to making its website accessible, <a class="govuk-link" href="https://www.legislation.gov.uk/uksi/2018/852/contents/made">in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018</a>. </p>
+            <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">This website is partially compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1</a>AA standard, due to the non-compliances listed below.</p> #}
+
+                  {# <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-left-3">Area management, Restrictions, Regulation zones and Reporting units</p>
+
+                  <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">This theme covers areas under an environmental policy or activity impacting the environment.</p>
+
+                  <p class="govuk-body govuk-!-margin-left-3">Policies include:</p>
+                  <ul class="govuk-list govuk-list--bullet govuk-!-margin-left-3">
+                    <li>reducing pollution levels </li>
+                    <li>conserving natural resources</li>
+                    <li>protecting plant, animal, and human health</li>
+                    <li>controlling development</li>
+                  </ul>
+
+                  <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">Local land charges which form part of this theme group include smoke control orders.</p>
+
+                  <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-left-3">Land use</p>
+
+                  <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">This theme covers the use and functions of a territory and its description of land. This depends on its socio-economic and ecological purpose.</p>
+
+                  <p class="govuk-body govuk-!-margin-left-3">The 2 types of land use are:</p>
+                  <ul class="govuk-list govuk-list--bullet govuk-!-margin-left-3">
+                    <li>The existing land use, which outlines the use and functions as they are now</li>
+                    <li>The planned land use, defined by spatial planning authorities to outline ways to use the land</li>
+
+                  </ul>
+
+                  <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">Local land charges which form part of this theme group include Legal agreements as to the use of land, and Tree Preservation Orders.</p>
+
+                  <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-left-3">Protected sites</p>
+
+                  <p class="govuk-body govuk-!-margin-left-3">This theme focuses on the specific conservation of designated areas of land or sea. It protects and maintains:</p>
+                  <ul class="govuk-list govuk-list--bullet govuk-!-margin-left-3">
+                    <li>listed buildings </li>
+                    <li>biological diversity</li>
+                    <li>conservation areas</li>
+                  </ul>
+
+                  <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">Local land charges which form part of these theme group include Ancient Monuments and Sites of Special Scientific Interest.</p> #}
+
+
+
+
+
+                <p class="govuk-heading-m">About INSPIRE polygons </p>
+                <div class="govuk-grid-row">
+                    <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">Each polygon has a unique identification number called an INSPIRE ID. You can use an INSPIRE ID to
+ <a class="govuk-link" href="https://search-local-land-charges.service.gov.uk/">Search for a local land charge</a>.</p>
+
+ <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">Each local land charge will have a polygon associated with it and may have more than one.
+</p>
+
+<p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">Polygons divide into separate data files for each local authority area. If a polygon is on the boundary between local authorities, it will appear in both data files.</p>
+
+<p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">To find out the definitive extent of land in a local land charge, you need to inspect the source documents. The originating authority will hold these.</p>
+
+<div class="govuk-!-padding-bottom-5"></div>
+
+<p class="govuk-heading-l govuk-!-margin-left-3">How you can use the data </p>
+<p class="govuk-heading-m govuk-!-margin-left-3">Conditions of use </p>
+
+<p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">
+Your use of the INSPIRE local land charges spatial data polygons service is governed by conditions.</p>
+
+    <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">This dataset is available for use and reuse under the
+<a class="govuk-link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence (OGL)</a>. This licence enables public bodies to make their data available free of charge for reuse.</p>
+
+<p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">Use under the OGL is free. If you fail to comply with any of the conditions of the OGL, then the rights granted to you under the licence will end automatically.</p>
+
+<p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">Under the OGL, when reusing the data, you must acknowledge the source of the data. and include the following attribution statement:
+</p>
+
+{# <blockquote class="noquotes">
+  <p class="govuk-body govuk-body">This information is subject to Crown copyright and database rights 2020 and is reproduced with the permission of HM Land Registry.</p>
+</blockquote> #}
+
+<p class="govuk-!-margin-left-3"> <img src="/public/images/quote1.png" alt="quote" style="width:100%"> </p>
+
+<p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">If you are reusing the polygons (including the associated geometry, namely x, y co-ordinates), you must also display the following Ordnance Survey attribution statement:</p>
+
+<p class="govuk-!-margin-left-3"> <img src="/public/images/quote2.png" alt="quote" style="width:100%"> </p>
+
+ <div class="govuk-inset-text govuk-!-margin-left-3">
+   You must provide a link to the following conditions:
+    https://use-land-property-data.service.gov.uk/datasets/inspire/#conditions.</div>
+
+
+<div class="govuk-!-padding-bottom-5"></div>
+
+
+
+<p class="govuk-heading-l govuk-!-margin-left-3">Access the data </p>
+    <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">The dataset updates on the sixth of each month and shows data from the previous month. For example, data published in April will contain data from March.</p>
+
+    <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">You will be able to access the data until we publish new data the following month.</p>
+
+    <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">The files are published as GML files. You will need a Geographical Information System (GIS) to view downloaded polygons.</p>
+
+    <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">GIS will enable you to store or edit downloaded data. You can then compare or integrate with other available datasets.</p>
+
+    <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3"> <a class="govuk-link" href="https://use-land-property-data.service.gov.uk/datasets/inspire/tech-guidance">Read the guidance on using GML format files.</a></p>
+    <button class="govuk-button govuk-!-margin-left-3" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='download-inspire.html'">Access data</button>
+
+
+
+    <p class="govuk-heading-l govuk-!-margin-left-3">Contact us </p>
+        <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-left-3">Telephone</p>
+
+        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">Telephone: 0300 006 0444 <br>Monday to Friday, 9am to 5pm</p>
+
+        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3"></p>
+
+        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3"> <a class="govuk-link" href="https://www.gov.uk/call-charges">Find out about call charges</a></p>
+
+        <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-left-3">Email</p>
+
+        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3"> <a class="govuk-link" href="0">SPITeam@landregistry.gov.uk</a> <br>We aim to respond within 2 working days</p>
+
+        <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-left-3">Address</p>
+
+        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">HMLR Local Land Charges <br> Processing Team
+<br>PO Box 326<br>Mitcheldean<br>GL14 9BQ</p>
+
+
+    </div>
+
+
+
+        </div>
+
+
+
+
+
+
+        <div class="govuk-grid-column-one-third">
+
+
+        </div>
+      </div>
+    </main>
+  </div>
+{% endblock %}
