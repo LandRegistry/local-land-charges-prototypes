@@ -82,7 +82,7 @@
             <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">On this website you should be able to:
               <ul class="govuk-list govuk-list--bullet govuk-!-margin-left-3">
                 <li>change colours, contrast levels and fonts</li>
-                <li>zoom in up to 200% without the text spilling off the screen</li>
+                <li>zoom in up to 150% without the text spilling off the screen</li>
                 <li>navigate most of the website using only a keyboard</li>
                 <li>navigate most of the website using speech recognition software</li>
                 <li>listen to most of the website using a screen reader (including the most recent versions of
@@ -100,9 +100,10 @@
               <p class="govuk-heading-l govuk-!-margin-left-3">How accessible this website is</p>
               <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">We know the following parts are not accessible:
                 <ul class="govuk-list govuk-list--bullet govuk-!-margin-left-3">
-                  <li>the map cannot be highlighted using the tab key</li>
+                  <li>the map is not highlighted when tabbing to it, but is still usable</li>
                   <li>there is empty ARIA Labels on the map</li>
                   <li>there is no hover text available</li>
+                  <li>there are minor formatting issues on the map pages when using the Safari browser</li>
                 </ul>
 
                 <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">We are working on these issues to improve the accessibility of this website.</p>
@@ -134,7 +135,7 @@
 
                         <p class="govuk-heading-l govuk-!-margin-left-3">Enforcement procedure</p>
                         <div class="govuk-grid-row govuk-!-margin-left-3">
-                          <p class="govuk-body govuk-!-font-weight-regular">The Equality and Human Rights Commission (EHRC) is responsible for enforcing the accessibility regulations.</p>
+                          <p class="govuk-body govuk-!-font-weight-regular"><a class="govuk-link" href="https://www.equalityhumanrights.com/en">The Equality and Human Rights Commission (EHRC)</a> is responsible for enforcing the accessibility regulations.</p>
                            <p class="govuk-body govuk-!-font-weight-regular">If you are not happy with how we respond to your complaint
                             <a class="govuk-link" href="https://www.equalityadvisoryservice.com/">contact the Equality Advisory and Support Service (EASS)</a>.</p>
                         </div>
@@ -148,54 +149,36 @@
                           </p>
                           <p class="govuk-heading-m">Compliance status</p>
                           <p class="govuk-body govuk-!-font-weight-regular">This website is partially compliant with the
-                            <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1
+                            <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) version 2.1
                             </a>AA standard, due to the following non-compliances.</p>
                         </div>
                         <div class="govuk-!-padding-bottom-4"></div>
-                        <p class="govuk-heading-l govuk-!-margin-left-3">Content that is not accessible</p>
+                        <p class="govuk-heading-l govuk-!-margin-left-3">Non-accessible content</p>
                         <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">The following content is not accessible. We have provided an explanation and reference to the relevant WCAG section.</p>
-                        <p class="govuk-heading-m govuk-!-margin-left-3">Issues with error messages</p>
+                          <p class="govuk-heading-m govuk-!-margin-left-3">Formatting on the map pages when using Safari</p>
                         <p class="govuk-!-margin-left-3">
-                          <div class =govuk-!-margin-left-3 style="background-color: #cecece ; padding: 10px;;">
-                            <p class="govuk-body govuk-!-font-weight-regular">Some of our pages cannot display all error messages. This means users are not told how to fix errors and get a ‘Something went wrong’ page. This fails WCAG (Web Content Accessibility Guidelines) 2.1 success criterion 3.3.1 (Error Identification) and 3.3.3 (Error Suggestion).</p>
-                          </div>
-                          </p>
-
-                        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">We are investigating this issue. We will aim to fix it as soon as possible.</p>
-                        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-left-3">
-                        <p class="govuk-heading-m govuk-!-margin-left-3">Issues with formatting on the map pages when using Safari</p>
-                        <p class="govuk-!-margin-left-3">
-                          <div class =govuk-!-margin-left-3 style="background-color: #cecece ; padding: 10px;;">
+                          <div class =govuk-!-margin-left-3 style="background-color: #f3f2f1 ; padding: 10px;;">
                             <p class="govuk-body govuk-!-font-weight-regular">There are minor formatting issues on the map pages when using the Safari browser.</p>
                           </div>
                           </p>
-                        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">Currently we do not have a solution that does not breach other accessibility criteria. For example, 1.3.2 Meaningful Sequence (A). We are investigating this issue.</p>
-                        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-left-3">
-                        <p class="govuk-heading-m govuk-!-margin-left-3">Issues accessing all features of the map</p>
-                        <p class="govuk-!-margin-left-3">
-                          <div class =govuk-!-margin-left-3 style="background-color: #cecece ; padding: 10px;;">
-                            <p class="govuk-body govuk-!-font-weight-regular">Users with keyboard-only control cannot access all features of the map. This fails against WCAG 2.1 A success criterion 2.1.1 (Keyboard Only Input).</p>
-                          </div>
-                          </p>
-                        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">Currently maps are not in the scope of the accessibility regulations. This means they will not be accessibility compliant. We are investigating this issue.</p>
+                        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">Currently we do not have a solution that does not breach other accessibility criteria. For example, <a class="govuk-link" href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html">1.3.2 Meaningful Sequence (A)</a>. We are investigating this issue.</p>
                         <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-left-3">
 
                         <p class="govuk-heading-l govuk-!-margin-left-3">How we tested this website</p>
-                        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">We tested this website on 1 July 2020.</p>
-                        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">Our internal audit team conduct all testing. This include:
+                        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">We tested this website on 25 October 2022.</p>
+                        <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">Our internal audit team conduct all testing. This includes:
                           <ul class="govuk-list govuk-list--bullet govuk-!-margin-left-3">
-                            <li>internal testing against the W3C WAI Web Content Accessibility Guidelines version 2.1</li>
-                            <li>logging all results and defects in Quality Center</li>
+                            <li>internal testing against the W3C WAI WCAG version 2.1</li>
                             <li>WAVE evaluation to check for contrast detection, heading, legend and label checks</li>
                             <li>W3C Markup Validation Service (for HTML validation)</li>
                             <li>Web Developer devices to disable JavaScript and check table layout, links, field sets and images with alt text</li>
-                            <li>Dragonspeak and JAWS screen readers</li>
+                            <li>Dragonspeak and <a class="govuk-link" href="0">JAWS</a> screen readers</li>
                             <li>PAC3 (PDF Accessibility Checker 3) automated devices, to assess PDF accessibility compliance</li>
                           </ul>
 
                           <p class="govuk-heading-l govuk-!-margin-left-3">What we are doing to improve</p>
                           <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">We are aware of the accessibility issues on this website. We aim to fix them as soon as possible.</p>
-                          <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">This statement was prepared on 16 August 2022. It was last updated on 21 October 2022.</p>
+                          <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">This statement was prepared on 16 August 2022. It was last updated on 25 October 2022.</p>
 
                           {# <div class="govuk-grid-row">
             <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-left-3">HM Land Registry commit to making its website accessible, <a class="govuk-link" href="https://www.legislation.gov.uk/uksi/2018/852/contents/made">in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018</a>. </p>
